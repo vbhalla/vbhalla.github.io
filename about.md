@@ -7,7 +7,7 @@ published: true
 
 “Critical thinking skills set apart the hackers from the true scientists” — Jake Porway
 
-After nearly a decade of running data teams while simultaneously owning a P&L; Vishal has had the unique opportunity to leverage the plethora of tools available to provide solutions that are accretive to business needs.
+After a decade of running data teams while simultaneously owning a P&L; Vishal has had the unique opportunity to leverage the plethora of tools available to provide solutions that are accretive to business needs.
 
 ### More Information
 
