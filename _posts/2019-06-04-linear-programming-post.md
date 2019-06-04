@@ -14,18 +14,6 @@ There are a lot of views on how much life insurance coverage you need, with one 
 
 
 
-
-```python
-import pandas as pd
-import numpy as np
-%matplotlib inline
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import axes3d
-import seaborn as sns
-df_matrix = pd.read_csv('../data/sample_insurance.csv')
-```
-
-
 ```python
 df_matrix.head(5)
 ```
@@ -123,7 +111,7 @@ plt.show()
 ```
 
 
-![png](output_2_0.png)
+![png](../images/2nd_post_linear_programming/output_2_0.png)
 
 
 
@@ -148,7 +136,7 @@ plt.title('Term - Coverage - Yearly Premium', y=1.03)
 
 
 
-![png](output_3_1.png)
+![png](../images/2nd_post_linear_programming/output_3_1.png)
 
 
 
@@ -175,7 +163,7 @@ plt.show()
 ```
 
 
-![png](output_5_0.png)
+![png](../images/2nd_post_linear_programming/output_5_0.png)
 
 
 
@@ -189,7 +177,7 @@ ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousan
 
 
 
-![png](output_6_1.png)
+![png](../images/2nd_post_linear_programming/output_6_1.png)
 
 
 
