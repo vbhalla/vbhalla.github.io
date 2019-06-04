@@ -12,12 +12,7 @@ I was married a few years ago and have been trying to be a grown up ever since, 
 There are a lot of views on how much life insurance coverage you need, with one quick google search you likely find lots of methods ranging from the extremely simple (i.e. a multiple X age bracket, to more complex cashflow modeling around projected income and/or expenses). For your sake, I'll just keep this post focused the fun data/math things I did :-)
 
 
-
-
-```python
-df_matrix.head(5)
-```
-
+I compiled a bunch of quotes and tossed them into a spreadsheet when I noticed something....see below for a glimpse into the dataframe....
 
 
 
@@ -1667,4 +1662,3 @@ df_portfolio_stats.head(10)
 ```python
 
 ```
-
