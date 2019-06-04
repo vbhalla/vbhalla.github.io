@@ -111,7 +111,7 @@ plt.show()
 ```
 
 
-![png](../images/2nd_post_linear_programming/output_2_0.png)
+![png](./images/2nd_post_linear_programming/output_2_0.png)
 
 
 
