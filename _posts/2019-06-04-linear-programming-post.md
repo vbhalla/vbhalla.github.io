@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Awesome Data Visualization"
-date:   2019-06-04 12:07:25 +0000
+title: Use Case for Linear Programming
+date: '2019-06-04 12:07:25 +0000'
 categories:
   - data
+published: true
 ---
 
 
@@ -392,7 +393,7 @@ plt.title('Term - Coverage - Yearly Premium', y=1.03)
 
 
 
-![png](output_8_1.png)
+![png](../images/2nd_post_linear_programming/output_8_1.png)
 
 
 
@@ -419,7 +420,7 @@ plt.show()
 ```
 
 
-![png](output_10_0.png)
+![png](../images/2nd_post_linear_programming/output_10_0.png)
 
 
 
@@ -452,7 +453,7 @@ ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousan
 
 
 
-![png](output_12_1.png)
+![png](../images/2nd_post_linear_programming/output_12_1.png)
 
 
 
@@ -2192,37 +2193,4 @@ df_portfolio_stats[(df_portfolio_stats.wa_term>20)].sort_values('premium_per_tho
 ```
 
 
-```python
 
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-#df_matrix['premium_per_thousand']=(df_matrix.yearly_premium/df_matrix.coverage)*1000
-#df_matrix['monthly_premium']=df_matrix.yearly_premium.apply(lambda x: x/12)
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
