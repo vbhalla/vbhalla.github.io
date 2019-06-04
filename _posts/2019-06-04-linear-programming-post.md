@@ -111,7 +111,7 @@ plt.show()
 ```
 
 
-![png](./images/2nd_post_linear_programming/output_2_0.png)
+![png](../images/2nd_post_linear_programming/output_7_0.png)
 
 
 
@@ -136,7 +136,7 @@ plt.title('Term - Coverage - Yearly Premium', y=1.03)
 
 
 
-![png](../images/2nd_post_linear_programming/output_3_1.png)
+![png](../images/2nd_post_linear_programming/output_8_1.png)
 
 
 
@@ -163,7 +163,7 @@ plt.show()
 ```
 
 
-![png](../images/2nd_post_linear_programming/output_5_0.png)
+![png](../images/2nd_post_linear_programming/output_10_0.png)
 
 
 
@@ -177,7 +177,7 @@ ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousan
 
 
 
-![png](../images/2nd_post_linear_programming/output_6_1.png)
+![png](../images/2nd_post_linear_programming/output_12_1.png)
 
 
 
