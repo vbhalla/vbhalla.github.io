@@ -87,10 +87,31 @@ I compiled a bunch of quotes and tossed them into a spreadsheet when I noticed s
 </table>
 </div>
 
-
 I started to wonder if this could be viewed as potential portfolio consisting of optimal terms, coverage amounts, and of course pricing.
 
 Taking a deeper look at a few plots you start to see how these 3 paramaters have some interesting relationships; leading me to conclude that perhaps there could be a potential optimum portfolio of coverages.
+
+
+```python
+plt.figure(figsize=(10, 8))
+plt.scatter(x = df_matrix['term'], 
+            y = df_matrix['coverage'], 
+            s = df_matrix['yearly_premium'],
+            alpha=0.3, 
+            edgecolors='w',)
+
+plt.xlabel('Term')
+plt.ylabel('Coverage')
+plt.title('Term - Coverage - Yearly Premium', y=1.03)
+```
+
+
+
+
+
+![png](../images/2nd_post_linear_programming/output_8_1.png)
+
+Now the above plot is pretty, but not very intuitive for the way I think.  Let's try a more explicit 3-diminesional view:
 
 
 ```python
@@ -114,24 +135,8 @@ plt.show()
 
 
 
-```python
-plt.figure(figsize=(10, 8))
-plt.scatter(x = df_matrix['term'], 
-            y = df_matrix['coverage'], 
-            s = df_matrix['yearly_premium'],
-            alpha=0.3, 
-            edgecolors='w',)
 
-plt.xlabel('Term')
-plt.ylabel('Coverage')
-plt.title('Term - Coverage - Yearly Premium', y=1.03)
-```
-
-
-
-
-
-![png](../images/2nd_post_linear_programming/output_8_1.png)
+What's interesting here is that the real relationship we're trying to understand 
 
 
 
@@ -167,12 +172,10 @@ sns.set(style="whitegrid")
 ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousand)
 ```
 
-    /Users/Shalu/anaconda/lib/python3.6/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-
 
 
 ![png](../images/2nd_post_linear_programming/output_12_1.png)
+
 
 
 
@@ -235,13 +238,9 @@ df_matrix.head(2)
 </table>
 </div>
 
-
-
-
 ```python
 df_matrix['cov_x_term']=(df_matrix.coverage * df_matrix.term)
 ```
-
 
 ```python
 # Create a list of the insurance items, terms, coverage, premiums, etc.
