@@ -133,7 +133,7 @@ plt.show()
 ![png](../images/2nd_post_linear_programming/output_7_0.png)
 
 
-You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  So let's create a new metric that helps us understand if something is "cheap" or "expensive".
+You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  Let's create a new metric around premium per unit of coverage ($1,000) that helps us understand if something is "cheap" or "expensive" across these parameters.
 
 
 ```python
@@ -172,13 +172,14 @@ ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousan
 
 ![png](../images/2nd_post_linear_programming/output_12_1.png)
 
-
+Ok, here we go, we can see here that it appears that premium per $1k of coverage is more expensive at shorter terms and longer terms.  I speculate that shorter terms have some fixed transactional costs in them and longer terms being more expensive is intuitive as the longer the term the higher the risk for the insurer.
 
 
 ```python
 df_matrix.head(2)
 ```
 
+Using our premium_per_thousand metric, we now have a gauge to compare pricing per unit of coverage.
 
 
 
