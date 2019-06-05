@@ -110,7 +110,7 @@ plt.title('Term - Coverage - Yearly Premium', y=1.03)
 
 ![png](../images/2nd_post_linear_programming/output_8_1.png)
 
-Now the above plot is pretty, but perhaps not very intuitive. Let's try a more explicit 3-diminesional view:
+The above plot is pretty, but perhaps not very intuitive. When we try a more explicit 3-diminesional plot it starts to get real interesting as you can visualize some real linear relationships here!  
 
 
 ```python
@@ -133,9 +133,7 @@ plt.show()
 ![png](../images/2nd_post_linear_programming/output_7_0.png)
 
 
-
-Here is where it gets interesting as you can see there are some real linear relationships!
-
+You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  So let's create a new metric that helps us understand if something is "cheap" or "expensive".
 
 
 ```python
@@ -163,7 +161,7 @@ plt.show()
 
 ![png](../images/2nd_post_linear_programming/output_10_0.png)
 
-
+The above plot isn't really that helpful, so let's try another view as it seems that these relationships vary a great deal according to the term.
 
 ```python
 sns.set(style="whitegrid")
