@@ -16,6 +16,7 @@ I compiled a bunch of quotes and tossed them into a spreadsheet when I noticed s
 
 
 
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -87,6 +88,9 @@ I compiled a bunch of quotes and tossed them into a spreadsheet when I noticed s
 </div>
 
 
+I started to wonder if this could be viewed as potential portfolio consisting of optimal terms, coverage amounts, and of course pricing.
+
+Taking a deeper look at a few plots you start to see how these 3 paramaters have some interesting relationships; leading me to conclude that perhaps there could be a potential optimum portfolio of coverages.
 
 
 ```python
@@ -123,10 +127,6 @@ plt.ylabel('Coverage')
 plt.title('Term - Coverage - Yearly Premium', y=1.03)
 ```
 
-
-
-
-    <matplotlib.text.Text at 0x1a221c5d68>
 
 
 
