@@ -86,7 +86,6 @@ I compiled a bunch of quotes and tossed them into a spreadsheet when I noticed s
   </tbody>
 </table>
 </div>
-
 I started to wonder if this could be viewed as potential portfolio consisting of optimal terms, coverage amounts, and of course pricing.
 
 Taking a deeper look at a few plots you start to see how these 3 paramaters have some interesting relationships; leading me to conclude that perhaps there could be a potential optimum portfolio of coverages.
@@ -111,7 +110,7 @@ plt.title('Term - Coverage - Yearly Premium', y=1.03)
 
 ![png](../images/2nd_post_linear_programming/output_8_1.png)
 
-Now the above plot is pretty, but not very intuitive for the way I think.  Let's try a more explicit 3-diminesional view:
+Now the above plot is pretty, but perhaps not very intuitive. Let's try a more explicit 3-diminesional view:
 
 
 ```python
@@ -135,8 +134,7 @@ plt.show()
 
 
 
-
-What's interesting here is that the real relationship we're trying to understand 
+Here is where it gets interesting as you can see there are some real linear relationships!
 
 
 
