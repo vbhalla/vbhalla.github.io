@@ -582,8 +582,6 @@ weights_df[weights_df.weights>0.0]
 </table>
 </div>
 
-
-
 #### We only have 1 policy that has a weight equal to 1 for a minimum average term of 30 years and $1.5 Million of Coverage. Appears that for these constraints, this policy is optimally priced.
 
 
