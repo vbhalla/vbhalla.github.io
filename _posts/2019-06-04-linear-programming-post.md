@@ -251,7 +251,13 @@ $300+$1300  = $1600 per year
 
 Let's say that I really only wanted $1 million of coverage for the first 10 but wanted to lock in some coverage over 30 years.
 
-The above might be a fun way to explore/refresh  [Linear Programming/Optimization](https://en.wikipedia.org/wiki/Linear_programming) in python.  Take a look at the link for a refresher, but 
+The above might be a fun way to explore/refresh  [Linear Programming/Optimization](https://en.wikipedia.org/wiki/Linear_programming) in python.  Linear programming is one of the simplest ways to perform optimization (often overlooked) and is often used across many business lines. This is often used in business operations to help evaluate the trade-offs between cost and efficiency(throuput) with very complicated contraints and dependencies.  I personally used this approach in optimizing call center operations where there were varying constraints on types of headcount, hours of operation, etc that really had implications on the quality of the customer experience.
+
+Let's take a look at our problem, evaluating our goal or metric we're trying to optimize which here is our price (premium); often referred to as our objective function.  Next thing we need are to explicitly state our constraints, for example we'd want a minimum average term period of 30 years and a minimum of $1.5 million of coverage.
+
+Next I found a python [pulp package](https://pythonhosted.org/PuLP/), which has some pretty good documentation.
+
+Here we go:
 
 
 ```python
