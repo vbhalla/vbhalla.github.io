@@ -11,8 +11,9 @@ I was married a few years ago and have been trying to be a grown up ever since, 
 
 There are a lot of views on how much life insurance coverage you need, with one quick google search you likely find lots of methods ranging from the extremely simple (i.e. a multiple X age bracket, to more complex cashflow modeling around projected income and/or expenses). For your sake, I'll just keep this post focused the fun data/math things I did :-)
 
+**Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was unfamiliar with.   
 
-I compiled a bunch of quotes and tossed them into a spreadsheet when I noticed something....see below for a glimpse into the dataframe....
+I scraped a bunch of policy quotes and tossed them into a spreadsheet when I noticed something....see below for a glimpse into the dataframe....
 
 
 
@@ -172,15 +173,13 @@ ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousan
 
 ![png](../images/2nd_post_linear_programming/output_12_1.png)
 
-Ok, here we go, we can see here that it appears that premium per $1k of coverage is more expensive at shorter terms and longer terms.  I speculate that shorter terms have some fixed transactional costs in them and longer terms being more expensive is intuitive as the longer the term the higher the risk for the insurer.
+Ok, here we go, we can see here that it appears that premium per $1k of coverage is more expensive at shorter terms and longer terms.  I speculate that shorter terms have some fixed transactional costs in them and longer terms are more expensive simply due to the fact that the longer the term the higher likelyhood of an event happening during that term period.
 
 
 ```python
 df_matrix.head(2)
 ```
-
-Using our premium_per_thousand metric, we now have a gauge to compare pricing per unit of coverage.
-
+Glimpsing at our dataframe below, we can see our premium_per_thousand metric.  If we know exactly the term we want and have a coverage amount range (and assume all insurers to be equal); we now have a metric that enables us to select the most attractively priced policy.  It's simple and elegant without a lot of complicated data science and math methods/tooling.  
 
 
 <div>
@@ -234,6 +233,20 @@ Using our premium_per_thousand metric, we now have a gauge to compare pricing pe
   </tbody>
 </table>
 </div>
+
+**Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was unfamiliar with.   
+
+What if we were flexible in terms of the amount of coverage we needed and the term profile?  Also what if there were hypothetical instances where we can construct mult-policy portfolios with varying coverage amounts and terms over time but weighted averages that are similar to individual policies at a more attractive cost?
+
+Hypothetical scenario: 
+I'm interested in Policy A which has a 20 year term and for $1 million dollars of coverage our premium is $2000 per year
+
+Policy B has a 10 year term and for $500k of coverage our premium is $300 per year
+Policy C has a 30 year term and for $500k of coverage our premium is $1300 per year
+
+If I purchase policy B & C:
+$500k+$500k = $1 million of coverage (for the first 10 years of course then drops to $500k)
+
 
 ```python
 df_matrix['cov_x_term']=(df_matrix.coverage * df_matrix.term)
