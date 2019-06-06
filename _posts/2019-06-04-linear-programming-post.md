@@ -1299,6 +1299,9 @@ df_portfolio_stats = df_portfolio_stats[['scenario', 'min_avg_term','min_tot_cov
 df_portfolio_stats['premium_per_thousand']=(df_portfolio_stats.yearly_premium/df_portfolio_stats.total_coverage)*1000
 ```
 
+Now we have everything in a format that allows us to compare to our original price matrix; personally I was intrigued by 23_1500000,23_1750000,23_2000000.
+
+Enjoy!
 
 ```python
 df_portfolio_stats.head(10)
@@ -1673,6 +1676,3 @@ df_portfolio_stats.head(10)
 
 
 
-```python
-
-```
