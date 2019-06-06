@@ -820,7 +820,7 @@ for min_avg_term in min_term_array:
 
 
 ```python
-num_scenarios
+num_scenarios: 30
 ```
 
 
