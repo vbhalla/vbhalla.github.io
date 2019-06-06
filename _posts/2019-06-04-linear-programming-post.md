@@ -134,7 +134,7 @@ plt.show()
 ![png](../images/2nd_post_linear_programming/output_7_0.png)
 
 
-You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  Let's create a new metric around premium per unit of coverage ($1,000) that helps us understand if something is "cheap" or "expensive" across these parameters.
+You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  Let's create a new metric around premium per unit of coverage ($1,000) that helps us understand if something is "cheap" or "expensive" across these parameters.  You probably see where we are headed, but let's just flush this out a bit more with some intuition before we get to the fun programming....
 
 
 ```python
@@ -234,7 +234,7 @@ Glimpsing at our dataframe below, we can see our premium_per_thousand metric.  I
 </table>
 </div>
 
-**Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was unfamiliar with.   
+**Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was unfamiliar with. This isn't a recommendation on selecting life insurance.   
 
 What if we were flexible in terms of the amount of coverage we needed and the term profile?  Also what if there were hypothetical instances where we can construct mult-policy portfolios with varying coverage amounts and terms over time but weighted averages that are similar to individual policies at a more attractive cost?
 
@@ -245,7 +245,13 @@ Policy B has a 10 year term and for $500k of coverage our premium is $300 per ye
 Policy C has a 30 year term and for $500k of coverage our premium is $1300 per year
 
 If I purchase policy B & C:
-$500k+$500k = $1 million of coverage (for the first 10 years of course then drops to $500k)
+$500k+$500k = $1 million of coverage (for the first 10 years of course then slides to $500k)
+($500k*10+$500k*30)/($500k+$500k) = 20 years of average coverage
+$300+$1300  = $1600 per year
+
+Let's say that I really only wanted $1 million of coverage for the first 10 but wanted to lock in some coverage over 30 years.
+
+The above might be a fun way to explore/refresh  [Linear Programming/Optimization](https://en.wikipedia.org/wiki/Linear_programming) in python.  Take a look at the link for a refresher, but 
 
 
 ```python
