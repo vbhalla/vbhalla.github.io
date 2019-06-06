@@ -523,9 +523,7 @@ print("Status:", LpStatus[prob.status])
 ```python
 #Now we have a dictionary that has a series of variables and an optimal set of weights for example
 print (prob.variables()[3].varValue)
-```
-
-    0.0
+```    0.0
 
 
 
