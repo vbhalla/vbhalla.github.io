@@ -604,8 +604,7 @@ weights_df[weights_df.weights>0.0]
   </tbody>
 </table>
 </div>
-
-#### We only have 1 policy that has a weight equal to 1 for a minimum average term of 30 years and $1.5 Million of Coverage. Appears that for these constraints, this policy is optimally priced.
+We only have 1 policy that has a weight equal to 1 for a minimum average term of 30 years and $1.5 Million of Coverage. Appears that for these constraints, this policy is optimally priced.
 
 
 ```python
@@ -771,8 +770,7 @@ df_scenario[df_scenario.weights>0.0]
 </div>
 
 
-
-#### Perhaps let's look at a few different scenarios of coverage and term, it's highly likely that the common policy terms 10,20,30 are likely optimally priced.  So perhaps looking at some potential terms in the middle may yield some fruit from using our integer programming technique/tool.
+Perhaps let's look at a few different scenarios of coverage and term, it's highly likely that the common policy terms 10,20,30 are likely optimally priced.  So perhaps looking at some potential terms in the middle may yield some fruit from using our integer programming technique/tool.
 
 
 ```python
@@ -780,7 +778,6 @@ df_scenario[df_scenario.weights>0.0]
 min_cov_array = [750000,1000000,1250000,1500000,1750000,2000000]
 min_term_array = [15,20,23,25,27]
 ```
-
 
 ```python
 num_scenarios = len(min_cov_array)*len(min_term_array)
@@ -1231,7 +1228,7 @@ df_weighted.head(5)
 </div>
 
 
-
+If you see below, we do have some scenarios where policies > 1; which indicates that a combination of policies will yield a more optimal price!  
 
 ```python
 #Quick view of our policies shows that this may be working.
