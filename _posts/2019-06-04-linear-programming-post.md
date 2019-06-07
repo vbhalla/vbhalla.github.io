@@ -481,8 +481,9 @@ df_matrix.head(15)
 
 
 
-### Let's Try To Solve With Linear/Integer Programming
+Let's now attempt to setup a framework to solve this thing with linear programming.  In this case it'll be integer programming as we can't have fractional weights, i.e. .3 of an insurance policy, we can only have integers.  
 
+![png](../images/2nd_post_linear_programming/Latex.png)
 
 ```python
 from pulp import *
@@ -502,7 +503,7 @@ insurance_vars = LpVariable.dicts("Life",insurance_items,0,cat='Integer')
 
 
 ```python
-#Next, we start building the LP problem by adding the main objective function. Note the use of thelpSum method.
+#Objective is the lowest yearly premium
 prob += lpSum([yearly_premium[i]*insurance_vars[i] for i in insurance_items])
 
 #Minimum Total Coverage
@@ -1672,7 +1673,3 @@ df_portfolio_stats.head(10)
   </tbody>
 </table>
 </div>
-
-
-
-
