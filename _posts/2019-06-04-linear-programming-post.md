@@ -233,7 +233,6 @@ Glimpsing at our dataframe below, we can see our premium_per_thousand metric.  I
   </tbody>
 </table>
 </div>
-
 **Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was unfamiliar with. This isn't a recommendation on selecting life insurance.   
 
 What if we were flexible in terms of the amount of coverage we needed and the term profile?  Also what if there were hypothetical instances where we can construct mult-policy portfolios with varying coverage amounts and terms over time but weighted averages that are similar to individual policies at a more attractive cost?
