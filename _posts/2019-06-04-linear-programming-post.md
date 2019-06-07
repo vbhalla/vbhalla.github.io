@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insurance and Linear Programming?
+title: Personal Insurance Optimization (Linear Programming)?
 date: '2019-06-04 12:07:25 +0000'
 categories:
   - data
@@ -1673,4 +1673,7 @@ df_portfolio_stats.head(10)
   </tbody>
 </table>
 </div>
+<br>
+<br>
+[Full Code Here](https://github.com/vbhalla/Projects/blob/master/linear_programming_life_insurance_post.ipynb)
 <br>
