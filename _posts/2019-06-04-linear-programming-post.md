@@ -480,9 +480,9 @@ df_matrix.head(15)
 </div>
 
 
-
-#### Now let's setup a framework to solve this thing with linear programming.  In this case it'll be integer programming as we can't have fractional weights, i.e. .3 of an insurance policy, we can only have integers.  
-<br><br>
+<br>
+Now let's setup a framework to solve this thing with linear programming.  In this case it'll be integer programming as we can't have fractional weights, i.e. .3 of an insurance policy, we can only have integers.  
+<br>
 
 ![png](../images/2nd_post_linear_programming/Latex.png)
 
