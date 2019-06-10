@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Personal Insurance Optimization (Linear Programming)?
+title: Insurance  (Linear programming and discrete optimization)?
 date: '2019-06-04 12:07:25 +0000'
 categories:
   - data
