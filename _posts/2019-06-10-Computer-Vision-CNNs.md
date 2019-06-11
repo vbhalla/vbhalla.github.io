@@ -9,7 +9,7 @@ published: true
 
 I have been looking for a fun computer vision use-case so I can play around with a CNN implementation as I haven't worked on too many deep learning problems and the technology has evolved so quickly.  I like many others don't regularly organize and backup my wife and my iphone pictures.  As I was going through the thousands of pictures, I realized a common theme: 
 
-<img src="../images/cnns_post/Lass.jpg" width="150">
+<img src="../images/cnns_post/Lass.jpg" width="150" align="middle">
 ---
 # CNNs Deep Learning Post
 
