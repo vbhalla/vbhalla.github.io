@@ -795,7 +795,7 @@ print ('Dog Breed:', predict_my_breed(file))
 
 ## Well that seems pretty accurate, let's try it out on my pooch
 <br>
-<img src="post_images/Lass.jpg" width="400">
+<img src="../images/cnns_post/Lass.jpg" width="400">
 
 
 ```python
@@ -860,7 +860,7 @@ plt.show()
 
 
 
-![png](../cnns_post/images/output_56_1.png)
+![png](../images/cnns_post/output_56_1.png)
 
 
 
