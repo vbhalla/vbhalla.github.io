@@ -7,13 +7,11 @@ categories:
 published: true
 ---
 
-# CNNs Deep Learning Post
-
 I have been looking for a fun computer vision use-case that would enable me play around with a CNN implementation as I haven't worked on too many deep learning problems.  I like many others don't regularly organize and backup my wife and my iphone pictures.  As I was going through the thousands of pictures, I realized a common theme: 
 
 <img src="../images/cnns_post/Lass.jpg" width="150">
 ---
-
+# CNNs Deep Learning Post
 
 The above is my beloved puppy and she has been the object of much of our photography (we're a bit obsessed), unfortunately every one of my images is labelled is some non-descriptive format i.e. 000224444.jpg.  
 
