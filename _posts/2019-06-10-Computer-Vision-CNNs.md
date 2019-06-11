@@ -814,9 +814,11 @@ predict_my_breed(lass)
 
 
 
-## Not too bad actually, she's a poodle mix, but I don't see that as prevalent in the training data set, so one way to improve this is to put more labradoodle mixes in there.
+## Not too bad actually 
 
-So now we have a dog breed classifier at 84%, let's grab a face detector, Udacity has a pretty cool example of using some predetermined face detection. OpenCV's has an implementation of [Haar feature-based cascade classifiers](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.  OpenCV provides many pre-trained face detectors, stored as XML files on [github](https://github.com/opencv/opencv/tree/master/data/haarcascades).  If you download one of the detectors in your directory you can play around as well, I downloaded the haarcascades.  
+She's a poodle mix, but I don't see that as prevalent in the training data set, so one way to improve this is to put more labradoodle mixes in there.
+
+Now we have a dog breed classifier at **84%**, let's grab a face detector, Udacity has a pretty cool example of using some predetermined face detection. OpenCV's has an implementation of [Haar feature-based cascade classifiers](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.  OpenCV provides many pre-trained face detectors, stored as XML files on [github](https://github.com/opencv/opencv/tree/master/data/haarcascades).  If you download one of the detectors in your directory you can play around as well, I downloaded the haarcascades.  
 
 
 ```python
