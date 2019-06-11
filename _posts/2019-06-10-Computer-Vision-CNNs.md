@@ -751,7 +751,7 @@ test(loaders, model, criterion, use_cuda)
     Test Accuracy: 84% (706/836)
 
 
-### Pretty Neat
+### WOOHOO....Pretty Neat
 The accuracy has bumped up to 84%, not too shabby, probably can be improved with some more training data and tweaking a few more parameters.  So we now have 133 classes, let's try it out by writing a small algorithm and testing it out.
 
 
@@ -905,7 +905,7 @@ face_detector(dog_file)
 
 
 
-So now I can write an algorithm, if it detects faces, then I can flag it.  Else I can 
+Now I can write an algorithm, if it detects faces, then I can flag it, else I'll try to figure out what breed of dog it is.  Something like the below is what I'll likely end up using.
 
 
 ```python
@@ -917,3 +917,4 @@ def run_app(img_path):
         print ('Human Detected')
     else:
         print ('Not your dog nor a person')
+ '''
