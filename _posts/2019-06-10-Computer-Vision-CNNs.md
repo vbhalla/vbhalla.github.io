@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insurance  (Linear programming and discrete optimization)?
+title: CNNs - Deep Learning - Puppy Post
 date: '2019-06-04 12:07:25 +0000'
 categories:
   - data
