@@ -917,4 +917,4 @@ def run_app(img_path):
         print ('Human Detected')
     else:
         print ('Not your dog nor a person')
- '''
+ ```
