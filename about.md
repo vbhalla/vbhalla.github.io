@@ -7,7 +7,7 @@ published: true
 
 “Critical thinking skills set apart the hackers from the true scientists” — Jake Porway
 
-After a decade of running data teams while simultaneously owning a P&L; Vishal has had the unique opportunity to leverage the plethora of tools available to provide solutions that are accretive to business needs.
+Vishal really focuses on building great businesses by leveraging data, technology, and design.  He has more than 15 years of leadership roles across Fin-Tech and Consumer Goods with advanced degrees in Finance, Business Strategy, Engineering, and Data Science to successfully launch initiatives, lead strategic shifts, and enable efficient, profitable scaling. 
 
 ### More Information
 
