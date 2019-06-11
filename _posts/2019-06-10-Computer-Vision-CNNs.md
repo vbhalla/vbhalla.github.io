@@ -860,7 +860,7 @@ plt.show()
 
 
 
-![png](output_56_1.png)
+![png](../cnns_post/images/output_56_1.png)
 
 
 
