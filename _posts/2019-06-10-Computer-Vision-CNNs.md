@@ -1,9 +1,11 @@
 ---
-published: false
+layout: post
+title: Insurance  (Linear programming and discrete optimization)?
+date: '2019-06-04 12:07:25 +0000'
+categories:
+  - data
+published: true
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
 
 # CNNs Deep Learning Post
 
@@ -305,34 +307,34 @@ model = train(n_epochs, loaders, model, optimizer,
                       criterion, use_cuda, 'model_fc3.pt')
 ```
 
-    Epoch: 1 	Training Loss: 4.809653 	Validation Loss: 4.693537
+    Epoch: 1  Training Loss: 4.809653   Validation Loss: 4.693537
     Validation loss decreased (inf --> 4.693537).  Saving model ...
     Total Time: 3.238 minutes
-    Epoch: 2 	Training Loss: 4.553798 	Validation Loss: 4.436768
+    Epoch: 2  Training Loss: 4.553798   Validation Loss: 4.436768
     Validation loss decreased (4.693537 --> 4.436768).  Saving model ...
     Total Time: 3.248 minutes
-    Epoch: 3 	Training Loss: 4.414593 	Validation Loss: 4.335376
+    Epoch: 3  Training Loss: 4.414593   Validation Loss: 4.335376
     Validation loss decreased (4.436768 --> 4.335376).  Saving model ...
     Total Time: 3.248 minutes
-    Epoch: 4 	Training Loss: 4.302392 	Validation Loss: 4.215953
+    Epoch: 4  Training Loss: 4.302392   Validation Loss: 4.215953
     Validation loss decreased (4.335376 --> 4.215953).  Saving model ...
     Total Time: 3.269 minutes
-    Epoch: 5 	Training Loss: 4.214605 	Validation Loss: 4.099763
+    Epoch: 5  Training Loss: 4.214605   Validation Loss: 4.099763
     Validation loss decreased (4.215953 --> 4.099763).  Saving model ...
     Total Time: 3.255 minutes
-    Epoch: 6 	Training Loss: 4.107606 	Validation Loss: 4.036846
+    Epoch: 6  Training Loss: 4.107606   Validation Loss: 4.036846
     Validation loss decreased (4.099763 --> 4.036846).  Saving model ...
     Total Time: 3.256 minutes
-    Epoch: 7 	Training Loss: 4.033701 	Validation Loss: 3.941356
+    Epoch: 7  Training Loss: 4.033701   Validation Loss: 3.941356
     Validation loss decreased (4.036846 --> 3.941356).  Saving model ...
     Total Time: 3.262 minutes
-    Epoch: 8 	Training Loss: 3.953173 	Validation Loss: 3.851250
+    Epoch: 8  Training Loss: 3.953173   Validation Loss: 3.851250
     Validation loss decreased (3.941356 --> 3.851250).  Saving model ...
     Total Time: 3.258 minutes
-    Epoch: 9 	Training Loss: 3.881432 	Validation Loss: 3.778061
+    Epoch: 9  Training Loss: 3.881432   Validation Loss: 3.778061
     Validation loss decreased (3.851250 --> 3.778061).  Saving model ...
     Total Time: 3.246 minutes
-    Epoch: 10 	Training Loss: 3.785154 	Validation Loss: 3.679010
+    Epoch: 10   Training Loss: 3.785154   Validation Loss: 3.679010
     Validation loss decreased (3.778061 --> 3.679010).  Saving model ...
     Total Time: 3.256 minutes
 
@@ -674,33 +676,33 @@ model = train(n_epochs, loaders, model, optimizer, criterion, use_cuda, 'model_v
 
 ```
 
-    Epoch: 1 	Training Loss: 3.181618 	Validation Loss: 2.487838
+    Epoch: 1  Training Loss: 3.181618   Validation Loss: 2.487838
     Validation loss decreased (inf --> 2.487838).  Saving model ...
     Total Time: 2.524 minutes
-    Epoch: 2 	Training Loss: 2.241434 	Validation Loss: 1.812700
+    Epoch: 2  Training Loss: 2.241434   Validation Loss: 1.812700
     Validation loss decreased (2.487838 --> 1.812700).  Saving model ...
     Total Time: 2.543 minutes
-    Epoch: 3 	Training Loss: 1.763387 	Validation Loss: 1.449733
+    Epoch: 3  Training Loss: 1.763387   Validation Loss: 1.449733
     Validation loss decreased (1.812700 --> 1.449733).  Saving model ...
     Total Time: 2.515 minutes
-    Epoch: 4 	Training Loss: 1.548704 	Validation Loss: 1.284194
+    Epoch: 4  Training Loss: 1.548704   Validation Loss: 1.284194
     Validation loss decreased (1.449733 --> 1.284194).  Saving model ...
     Total Time: 2.528 minutes
-    Epoch: 5 	Training Loss: 1.393220 	Validation Loss: 1.159660
+    Epoch: 5  Training Loss: 1.393220   Validation Loss: 1.159660
     Validation loss decreased (1.284194 --> 1.159660).  Saving model ...
     Total Time: 2.541 minutes
-    Epoch: 6 	Training Loss: 1.291400 	Validation Loss: 1.172395
+    Epoch: 6  Training Loss: 1.291400   Validation Loss: 1.172395
     Total Time: 2.502 minutes
-    Epoch: 7 	Training Loss: 1.248277 	Validation Loss: 1.088839
+    Epoch: 7  Training Loss: 1.248277   Validation Loss: 1.088839
     Validation loss decreased (1.159660 --> 1.088839).  Saving model ...
     Total Time: 2.535 minutes
-    Epoch: 8 	Training Loss: 1.180103 	Validation Loss: 1.078598
+    Epoch: 8  Training Loss: 1.180103   Validation Loss: 1.078598
     Validation loss decreased (1.088839 --> 1.078598).  Saving model ...
     Total Time: 2.534 minutes
-    Epoch: 9 	Training Loss: 1.139643 	Validation Loss: 1.062964
+    Epoch: 9  Training Loss: 1.139643   Validation Loss: 1.062964
     Validation loss decreased (1.078598 --> 1.062964).  Saving model ...
     Total Time: 2.521 minutes
-    Epoch: 10 	Training Loss: 1.093010 	Validation Loss: 1.041088
+    Epoch: 10   Training Loss: 1.093010   Validation Loss: 1.041088
     Validation loss decreased (1.062964 --> 1.041088).  Saving model ...
     Total Time: 2.541 minutes
 
@@ -917,9 +919,3 @@ def run_app(img_path):
     else:
         print ('Not your dog nor a person')
 
-```
-
-
-```python
-
-```
