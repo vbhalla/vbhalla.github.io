@@ -19,6 +19,6 @@ But after a few years:
 
 Not too bad, although definitely not my bestwork.  When I get some time, I'd like to revisit and backtest this with some new methods, perhaps a Nueral Network.....
 
-Old Project below:
+Old Project and Write Up of My Analysis:
 
 [Link : 2016 Loan Defaults Project](https://github.com/vbhalla/Projects/tree/master/102016_loan_defaults)
