@@ -4,14 +4,14 @@ title: About
 permalink: /about/
 published: true
 ---
+Vishal has more than 15 years of leadership roles across Fin-Tech and Consumer Goods with advanced degrees in Finance, Business Strategy, Engineering, and Data Science.  
 
-“Critical thinking skills set apart the hackers from the true scientists” — Jake Porway
+His multi-disciplnary background allows a holistic approach to building great businesses and products through thoughtful leveraging of data, technology, and design.  He has a track record of successfully launching initiatives in highly regulated businesses, leading large strategic shifts, and further enabling efficient, profitable scaling. 
 
-Vishal really focuses on building great businesses by leveraging data, technology, and design.  He has more than 15 years of leadership roles across Fin-Tech and Consumer Goods with advanced degrees in Finance, Business Strategy, Engineering, and Data Science to successfully launch initiatives, lead strategic shifts, and enable efficient, profitable scaling. 
 
 ### More Information
 
-In his spare time he likes to play with his puppy and ride his bike around Jersey City.
+In his spare time he likes to play with his puppy, ride his bike around Jersey City, and travel with his better half.
 
 ### Contact me
 
