@@ -14,11 +14,11 @@ But after a few years:
 
 | Portfolio | Charged Off | Current + Fully Paid | Default Rate |
 | :---  | :---: | :---: | :---: | 
-| Manually Constructed | 30 | 197 | 13.22% |
-| ML Algorithm | 6 | 55 | *9.84%* |
+| Manually Constructed | 30 | 197 | **13.22%** |
+| ML Algorithm | 6 | 55 | **9.84%** |
 
-When I get some time, I'd like to revisit this with some new methods, perhaps a Nueral Network.....
+Not too bad, although definitely not my bestwork.  When I get some time, I'd like to revisit and backtest this with some new methods, perhaps a Nueral Network.....
 
-Project below as I've tried to clean it up a bit:
+Old Project below:
 
 [Link : 2016 Loan Defaults Project](https://github.com/vbhalla/Projects/tree/master/102016_loan_defaults)
