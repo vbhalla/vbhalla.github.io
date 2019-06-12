@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retro on Loan Defaults Across Portfolios
+title: Retro on Supervised Learning and Loan Defaults
 published: true
 ---
 
