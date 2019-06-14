@@ -7,23 +7,23 @@ categories:
 published: true
 ---
 
-I have been looking for a fun computer vision use-case so I can play around with a CNN implementation as I haven't worked on too many deep learning problems and the technology has evolved so quickly.  My wife and I don't regularly organize and backup my iphone pictures.  As I was going through the thousands of pictures, I realized a common theme: 
+I have been looking for a fun computer vision use case so I can play around with a CNN implementation. I haven't worked on too many deep learning problems and the technology has evolved so quickly.  My wife and I don't regularly organize and backup my iPhone pictures.  As I was going through the thousands of pictures, I realized a common theme: 
 
 <img src="../images/cnns_post/Lass.jpg" width="150" align="middle">
 ---
 # CNNs Deep Learning Post
 
-The above is my beloved puppy and she has been the object of much of our photography (we're a bit obsessed), unfortunately every one of my images is labelled is some non-descriptive format i.e. 000224444.jpg.  
+The above is my beloved puppy and she has been the object of much of our photography (we're a bit obsessed), unfortunately every one of the images is labelled is some non-descriptive format i.e. 000224444.jpg.  
 
-This could be a fun use-case for a convolutional neural network (CNNs) as they are pretty good for computer vision, right?
-> I would want to build a model that could accurately find my dog and/or identify a person and then run it through all the photos on my harddrive identifying which ones contained my pup.  I can then move those over to a relevant folder and then inspect the remainder, right?
+This could be a fun use case for a convolutional neural network (CNNs) as they are pretty good for computer vision, right?
+> I would want to build a model that could accurately find my dog and/or identify a person and then run it through all the photos on my hard drive identifying which ones contained my pup.  I can then move those over to a relevant folder and then inspect the remainder, right?
 
 
 First thing I'd need is access to a large number of images that I can train on.  Luckily I found 2 of these datasets on Udacity:
 - [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip) 
 - [people dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip)
 
-I'd chosen to use pyTorch as I've heard good things related to it's Python first approach: [pytorch](https://pytorch.org/docs/stable/index.html)
+I have chosen to use pyTorch as I've heard good things related to it's Python first approach: [pytorch](https://pytorch.org/docs/stable/index.html)
 
 
 ```python
@@ -145,9 +145,9 @@ print (unique_dogs)
     133
 
 
-If I randomly chose a breed, I would have a probability of it being correct of 1/133, hopefully I can achieve an accuracy higher than that.
+If I randomly choose a breed, I would have a probability of it being correct of 1/133, hopefully I can achieve an accuracy higher than that.
 
-After googling around, I looked at a few CNN architectures and it seemed that 3-5 Convolutional layers would be a good start.  I then initially had 1 fully connected layer, but to be honest the model performed poorly so I added to additional layers and adjusted my learning rate down. 
+After googling around, I looked at a few CNN architectures and it seemed that 3-5 Convolutional layers would be a good start.  I then initially had 1 fully connected layer, but to be honest the model performed poorly so I added two additional layers and adjusted my learning rate down. 
 
 ### Architecture
 
@@ -212,7 +212,7 @@ if train_on_gpu:
     )
 
 
-I now need to specify a loss function and an optimizer for my neural network. I chose cross entropy loss as according to the [documentation](http://pytorch.org/docs/stable/nn.html#loss-functions)
+I now need to specify a loss function and an optimizer for my neural network. I chose cross entropy loss according to the [documentation](http://pytorch.org/docs/stable/nn.html#loss-functions)
 
 >It is useful when training a classification problem with C classes. If provided, the optional argument weight should be a 1D Tensor assigning weight to each of the classes. This is particularly useful when you have an unbalanced training set.
 
@@ -818,7 +818,7 @@ predict_my_breed(lass)
 
 She's a poodle mix, but I don't see that as prevalent in the training data set, so one way to improve this is to put more labradoodle mixes in there.
 
-Now we have a dog breed classifier at **84%**, let's grab a face detector, Udacity has a pretty cool example of using some predetermined face detection. OpenCV's has an implementation of [Haar feature-based cascade classifiers](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.  OpenCV provides many pre-trained face detectors, stored as XML files on [github](https://github.com/opencv/opencv/tree/master/data/haarcascades).  If you download one of the detectors in your directory you can play around as well, I downloaded the haarcascades.  
+Now we have a dog breed classifier at **84%**, let's grab a face detector, Udacity has a pretty cool example of using some predetermined face detection. OpenCV's has an implementation of [Haar feature-based cascade classifiers](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.  OpenCV provides many pre-trained face detectors, stored as XML files on [github](https://github.com/opencv/opencv/tree/master/data/haarcascades).  If you download one of the detectors in your directory you can play around as well. I downloaded the haarcascades.  
 
 
 ```python
