@@ -7,13 +7,13 @@ categories:
 published: true
 ---
 
-I was married a few years ago and have been trying to be a grown up ever since, I think other people may empathize as there are just so many things to consider.  After working on Wall Street and several FinTech startups spanning personal finance, financial planning, mortgage, and property and casualty insurance.....embarrasingly I didn't ever consider life insurance.  My wife and I realized that we both should have probably gotten some earlier in our lives when things were much cheaper, but better late than never, right?
+Welcome to adulthood.  After three years of marriage, my friends definitely empathize, things got real and it was time to do some grown up things around our life plan. After working on Wall Street and several FinTech startups spanning personal finance, financial planning, mortgage, and property and casualty insurance.....embarrasingly I didn't ever consider life insurance.  My wife and I realized that we both should have probably gotten some earlier in our lives when things were much cheaper, but better late than never, right?
 
-There are a lot of views on how much life insurance coverage you need, with one quick google search you likely find lots of methods ranging from the extremely simple (i.e. a multiple X age bracket, to more complex cashflow modeling around projected income and/or expenses). For your sake, I'll just keep this post focused the fun data/math things I did :-)
+There are numerous views on how much life insurance coverage is necessary. A quick google search will populate various methods ranging from the extremely simple (i.e. a multiple X age bracket, to more complex cash flow modeling around projected income and/or expenses). For your sake, I’ll keep this post focused the fun data/math problems I solved. 
 
-**Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was unfamiliar with.   
+**Full disclaimer here again:** I'm not a life insurance expert, the below was just a fun problem to explore some methods/packages I was previously unfamiliar with.   
 
-I scraped a bunch of policy quotes and tossed them into a spreadsheet when I noticed something....see below for a glimpse into the dataframe....
+I scraped multiple policy quotes and transcribed them into a spreadsheet when I noticed something interesting. Please, see below for a glimpse into the dataframe.
 
 
 
@@ -87,9 +87,8 @@ I scraped a bunch of policy quotes and tossed them into a spreadsheet when I not
   </tbody>
 </table>
 </div>
-I started to wonder if this could be viewed as potential portfolio consisting of optimal terms, coverage amounts, and of course pricing.
-
-Taking a deeper look at a few plots you start to see how these 3 paramaters have some interesting relationships; leading me to conclude that perhaps there could be a potential optimum portfolio of coverages.
+I started to wonder if this could be viewed as a potential portfolio consisting of optimal terms, coverage amounts, and, most importantly, costs. 
+After taking a deeper look at a few plots, I started to realize how these 3 parameters have some interesting correlations, leading me to conclude that perhaps there could be a potential optimum portfolio of coverage. 
 
 
 ```python
@@ -111,7 +110,7 @@ plt.title('Term - Coverage - Yearly Premium', y=1.03)
 
 ![png](../images/2nd_post_linear_programming/output_8_1.png)
 
-The above plot is pretty, but perhaps not very intuitive. When we try a more explicit 3-diminesional plot it starts to get real interesting as you can visualize some real linear relationships here!  
+The above plot is pretty, but perhaps not very intuitive. When we try a more explicit 3-dimensional plot, it starts to get more interesting as you can visualize some real linear relationships here!  
 
 
 ```python
@@ -134,7 +133,7 @@ plt.show()
 ![png](../images/2nd_post_linear_programming/output_7_0.png)
 
 
-You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  Let's create a new metric around premium per unit of coverage ($1,000) that helps us understand if something is "cheap" or "expensive" across these parameters.  You probably see where we are headed, but let's just flush this out a bit more with some intuition before we get to the fun programming....
+You can see the linearity is particularly pronounced along coverage amounts and premium, which is intuitive (equally important is that it is good sanity check on the data).  Let’s create a new metric around premium per unit of coverage ($1,000) that helps us understand if something is “cheap” or “expensive” across all of these parameters. You can probably see where we are headed, but let’s just flush this out a bit more with some intuition before we get to the fun programming.
 
 
 ```python
@@ -173,13 +172,13 @@ ax = sns.barplot(x=df_matrix.term.astype('str'), y=df_matrix.premium_per_thousan
 
 ![png](../images/2nd_post_linear_programming/output_12_1.png)
 
-Ok, here we go, we can see here that it appears that premium per $1k of coverage is more expensive at shorter terms and longer terms.  I speculate that shorter terms have some fixed transactional costs in them and longer terms are more expensive simply due to the fact that the longer the term the higher likelyhood of an event happening during that term period.
+Ok, here we go, we can see here that it appears that premium per $1k of coverage is more expensive at shorter and longer terms.  I speculate that shorter terms have some fixed transactional costs in them and longer terms are more expensive simply due to the fact that the longer the term the higher likelyhood of an event happening during that term period.
 
 
 ```python
 df_matrix.head(2)
 ```
-Glimpsing at our dataframe below, we can see our premium_per_thousand metric.  If we know exactly the term we want and have a coverage amount range (and assume all insurers to be equal); we now have a metric that enables us to select the most attractively priced policy.  It's simple and elegant without a lot of complicated data science and math methods/tooling.  
+After taking a glimpse at the dataframe below, we can clearly see the premium_per_thousand metric. If we know exactly the term we want and have a coverage amount range (and assume all insurers to be equal), we now have a metric that enables us to select the most attractively priced policy. It’s simple and elegant without a lot of complicated data science and math. 
 
 
 <div>
@@ -248,11 +247,11 @@ $500k+$500k = $1 million of coverage (for the first 10 years of course then slid
 ($500k*10+$500k*30)/($500k+$500k) = 20 years of average coverage
 $300+$1300  = $1600 per year
 
-Let's say that I really only wanted $1 million of coverage for the first 10 but wanted to lock in some coverage over 30 years.
+Let’s say that I really only wanted $1 million of coverage for the first 10 years, but wanted to lock in coverage over 30 years.
 
-The above might be a fun way to explore/refresh  [Linear Programming/Optimization](https://en.wikipedia.org/wiki/Linear_programming) in python.  Linear programming is one of the simplest ways to perform optimization (often overlooked) and is often used across many business lines. This is often used in business operations to help evaluate the trade-offs between cost and efficiency(throuput) with very complicated contraints and dependencies.  I personally used this approach in optimizing call center operations where there were varying constraints on types of headcount, hours of operation, etc that really had implications on the quality of the customer experience.
+The above might be a fun way to explore/refresh  [Linear Programming/Optimization](https://en.wikipedia.org/wiki/Linear_programming) in python.  Linear programming is one of the simplest ways to perform optimization (often overlooked) and is often used across many business lines. This is often used in business operations to help evaluate the trade-offs between cost and efficiency(throughput) with very complicated contraints and dependencies.  I personally used this approach in optimizing call center operations where there were varying constraints on types of headcount, hours of operation, etc that really had implications on the quality of the customer experience.
 
-Let's take a look at our problem, evaluating our goal or metric we're trying to optimize which here is our price (premium); often referred to as our objective function.  Next thing we need are to explicitly state our constraints, for example we'd want a minimum average term period of 30 years and a minimum of $1.5 million of coverage.
+Let's take a look at our problem, evaluating our goal or metric we're trying to optimize which is our price (premium) here; often referred to as our objective function.  The next step is to explicitly state the constraints, for example, we would need a minimum average term period of 30 years and a minimum of $1.5 million of coverage.
 
 Next I found a python [pulp package](https://pythonhosted.org/PuLP/), which has some pretty good documentation.
 
@@ -605,7 +604,7 @@ weights_df[weights_df.weights>0.0]
   </tbody>
 </table>
 </div>
-We only have 1 policy that has a weight equal to 1 for a minimum average term of 30 years and $1.5 Million of Coverage. Appears that for these constraints, this policy is optimally priced.
+There is only 1 policy that has a weight equal to 1 for a minimum average term of 30 years and $1.5 million of coverage. It appears that for these constraints, this policy is optimally priced.
 
 
 ```python
@@ -771,7 +770,7 @@ df_scenario[df_scenario.weights>0.0]
 </div>
 
 
-Perhaps let's look at a few different scenarios of coverage and term, it's highly likely that the common policy terms 10,20,30 are likely optimally priced.  So perhaps looking at some potential terms in the middle may yield some fruit from using our integer programming technique/tool.
+Perhaps, let’s look at a few different scenarios of coverage and term. It is expected that the common policy terms 10, 20, and 30 years are likely optimally priced. So, perhaps looking at some potential terms in the middle may yield some fruit from using our integer programming technique/tool.
 
 
 ```python
@@ -1229,7 +1228,7 @@ df_weighted.head(5)
 </div>
 
 
-If you see below, we do have some scenarios where policies > 1; which indicates that a combination of policies will yield a more optimal price!  
+Below, I have listed a few scenarios with policies > 1, which indicates that a combination of policies will yield a more optimal price!
 
 ```python
 #Quick view of our policies shows that this may be working.
