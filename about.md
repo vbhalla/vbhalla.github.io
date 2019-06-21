@@ -15,6 +15,6 @@ In his spare time he likes to play with his puppy, ride his bike around Jersey C
 
 ### Contact me
 
-[LinkedIn](https://www.linkedin.com/in/vishal-bhalla/)
+<a href="https://www.linkedin.com/in/vishal-bhalla/" target="_blank">LinkedIn</a>
 
 [vishal.amar.bhalla@gmail.com](mailto:vishal.amar.bhalla@gmail.com)
