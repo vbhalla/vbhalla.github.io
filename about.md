@@ -16,7 +16,7 @@ A hike my wife and I took in Tanzania, where I proposed and thankfully she said 
 
 <img src="/images/africa.jpg" alt="Puppy" height="50%" width="50%">    
 
-The other love of my life is our puppy Lassi.
+The other love of my life:
 
 <img src="/images/Lass.jpg" alt="Puppy" height="25%" width="25%" >
 
