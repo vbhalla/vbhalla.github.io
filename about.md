@@ -12,9 +12,9 @@ His multi-disciplnary background allows a holistic approach to building great bu
 
 In my spare time I like to play with my puppy, easy hiking, riding his bike around Jersey City, and traveling with his better half.
 
-Below is a hike we took in Tanzania, where I proposed and thankfully she said yes; phewww saving me from an awkward 2 days down the mountain had she not. 
+A hike my wife and I took in Tanzania, where I proposed and thankfully she said yes; phewww saving me from an awkward 2 days down the mountain had she not. 
 
-<img src="/images/africa.jpg" alt="Puppy" height="40%" width="40%">    
+<img src="/images/africa.jpg" alt="Puppy" height="50%" width="50%">    
 
 The other love of my life is our puppy Lassi.
 
