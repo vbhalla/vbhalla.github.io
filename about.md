@@ -11,7 +11,10 @@ His multi-disciplnary background allows a holistic approach to building great bu
 
 ### More Information
 
-In his spare time he likes to play with his puppy, ride his bike around Jersey City, and travel with his better half.
+In his spare time he likes to play with his puppy, easy hiking, riding his bike around Jersey City, and traveling with his better half.
+
+Below is a hike we took in Tanzania, we made it to the top and I proposed.
+<img src="/images/africa.jpg" alt="Tanzania Kilimanjaro" height='150" wide="150">
 
 ### Contact me
 
