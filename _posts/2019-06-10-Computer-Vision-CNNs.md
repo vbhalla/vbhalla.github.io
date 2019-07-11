@@ -11,7 +11,6 @@ I have been looking for a fun computer vision use case so I can play around with
 
 <img src="../images/cnns_post/Lass.jpg" width="150" align="middle">
 ---
-# CNNs Deep Learning Post
 
 The above is my beloved puppy and she has been the object of much of our photography (we're a bit obsessed), unfortunately every one of the images is labelled is some non-descriptive format i.e. 000224444.jpg.  
 
