@@ -809,15 +809,17 @@ predict_my_breed(lass)
 
 
 
-    'Bichon frise'
+    'Cavalier King Charles Spaniel'
 
 
 
 ## Not too bad actually 
 
-She's a poodle mix, but I don't see that as prevalent in the training data set, so one way to improve this is to put more labradoodle mixes in there.
+She's a poodle mix, but she definitely has those Cavalier ears!  I don't see these types of mixes as prevalent in the training data set, so one way to improve this is to put more poodle mixes in there.  
 
-Now we have a dog breed classifier at **84%**, let's grab a face detector, Udacity has a pretty cool example of using some predetermined face detection. OpenCV's has an implementation of [Haar feature-based cascade classifiers](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.  OpenCV provides many pre-trained face detectors, stored as XML files on [github](https://github.com/opencv/opencv/tree/master/data/haarcascades).  If you download one of the detectors in your directory you can play around as well. I downloaded the haarcascades.  
+I definitely have gone off on a tangent here as I originally just wanted to identify my dog.  The increased complexity of breeds may be helpful if I had other dogs in my photos and wanted only to identify mine, that wasn't the case but it was a more interesting problem to solve. 
+
+Now we have a dog breed classifier at **84%**, let's grab a face detector which can parse out humans from dogs; Udacity has a pretty cool example of using some predetermined face detection. OpenCV's has an implementation of [Haar feature-based cascade classifiers](http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) to detect human faces in images.  OpenCV provides many pre-trained face detectors, stored as XML files on [github](https://github.com/opencv/opencv/tree/master/data/haarcascades).  If you download one of the detectors in your directory you can play around as well. I downloaded the haarcascades.  
 
 
 ```python
