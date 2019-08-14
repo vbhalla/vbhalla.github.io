@@ -1,5 +1,10 @@
 ---
-published: false
+layout: post
+title: AWS Sagemaker and Sentiment Analysis 
+date: '2019-08-07 12:07:25 +0000'
+categories:
+  - data
+published: true
 ---
 
 # AWS Sagemaker and Sentiment Analysis 
