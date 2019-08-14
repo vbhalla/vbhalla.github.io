@@ -262,8 +262,6 @@ Now we can deploy and test our model, note you should close all endpoints or you
 predictor = estimator.deploy(initial_instance_count=1, instance_type='ml.m4.xlarge')
 ```
 
-    ----------------------------------------------------------------------------------------------------!
-
 
 ```python
 # Chunking the data and adding results.
