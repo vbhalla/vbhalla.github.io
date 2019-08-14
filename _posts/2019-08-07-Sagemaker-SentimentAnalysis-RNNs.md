@@ -7,7 +7,6 @@ categories:
 published: true
 ---
 
-# AWS Sagemaker and Sentiment Analysis 
 My goal this summer of exploring some of the new data science technologies wouldn't be complete without looking at some ways to deploy productionized models.  I already have had the experience of running my models on an EC2 instance a couple of years ago, which was not an ideal experience.  To be fair I was seeking an alternative to running my model locally not necessarily a scaleable solution.  I figured it would be great to see all the progress using some of the new technologies out there.  I started looking at AWS Sagemaker which allows you to build and deploy machine learning models and they also have some good [documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) filled with examples.
 
 One of the relevant data sets in the examples is the [IMDb Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/), so best if we just use that.  
