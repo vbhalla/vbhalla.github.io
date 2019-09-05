@@ -335,7 +335,7 @@ User Prompt: "Enter your review below and click submit"
 
 ### Some Sample Reviews:
 
-**Input**: This movie started off with so much potential and then disappointed terribly.
+**Input**: This movie started off with so much potential and then disappointed terribly.<br>
 **Output**: Your review was NEGATIVE!
 
 I then grabbed a handful of reviews from Rotten Tomatoes from the L and surprisingly did pretty well<br>
@@ -348,4 +348,4 @@ I then grabbed a handful of reviews from Rotten Tomatoes from the L and surprisi
 
 
 
-Then I just deleted my endpoint  with predictor.delete_endpoint()
+Don't forget to delete your endpoint; you can do that with predictor.delete_endpoint()
