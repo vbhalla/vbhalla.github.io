@@ -333,18 +333,18 @@ User Prompt: "Enter your review below and click submit"
 <form method="POST" action="https://yourAPIURL.com" onsubmit="return submitForm(this);" >       
 ```
 
-Some Sample Reviews:
+### Some Sample Reviews:
 
-Input: This movie started off with so much potential and then disappointed terribly.
-<br>Output: Your review was NEGATIVE!
+**Input**: This movie started off with so much potential and then disappointed terribly.
+**Output**: Your review was NEGATIVE!
 
 I then grabbed a handful of reviews from Rotten Tomatoes from the L and surprisingly did pretty well<br>
 
-Input: Beautiful but disappointing. The images feel very real at times, but they lack the character and heart of both truly real animals and traditional animation.<br>
-Output: Your review was NEGATIVE!
+**Input**: Beautiful but disappointing. The images feel very real at times, but they lack the character and heart of both truly real animals and traditional animation.<br>
+**Output** Your review was NEGATIVE!
 
-Input: Despite the superstar talent of the cast and the stunning presentation, it misses some of the heart that placed the original securely in the pop culture canon.<br>
-Output: Your review was POSITIVE!
+**Input**: Despite the superstar talent of the cast and the stunning presentation, it misses some of the heart that placed the original securely in the pop culture canon.<br>
+**Output** Your review was POSITIVE!
 
 
 
