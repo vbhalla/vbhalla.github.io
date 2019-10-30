@@ -108,9 +108,8 @@ df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].p
           dtype=object)
 
 
-
-
-![png](support_post_health_files/support_post_health_6_1.png)
+![png](health_post/support_post_health_6_1.png)
+#![png](support_post_health_files/support_post_health_6_1.png)
 
 
 ## Monthly Averages 
