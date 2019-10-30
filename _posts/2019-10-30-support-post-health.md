@@ -1,4 +1,14 @@
 
+---
+layout: post
+title: Healthy Data Wrangling
+date: '2019-10-28 12:07:25 +0000'
+categories:
+  - data
+published: false
+---
+
+The past year I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  It has been a sea of emotions: daunting, confusing, intimidating, saddening, and actually quite empowering.  That is a story for another day.  Building a data-driven foundation culture into an organization: infrastructure, experimentation, and consistently monitoring, mining, extrapolating for insights in order to make large calculated bets has been a huge part of what I love about my jobs.  I kinda wondered, why can't I do that same thing; swapping out the business ofr my body :-)  I'd like to share a subset of a project, it was humbling how much more complicated, noisy, and just plain messy some of the data contained in these platforms currently are.
 
 ```python
 import pandas as pd
