@@ -109,7 +109,7 @@ df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].p
 
 
 ![png](health_post/support_post_health_6_1.png)
-#![png](support_post_health_files/support_post_health_6_1.png)
+#![png](health_post/support_post_health_6_1.png)
 
 
 ## Monthly Averages 
@@ -135,8 +135,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-
-![png](support_post_health_files/support_post_health_8_0.png)
+![png](health_post/support_post_health_8_0.png)
 
 
 
@@ -163,7 +162,7 @@ plt.show()
 ```
 
 
-![png](support_post_health_files/support_post_health_9_0.png)
+![png](health_post/support_post_health_9_0.png)
 
 
 
@@ -184,7 +183,7 @@ plt.show()
 ```
 
 
-![png](support_post_health_files/support_post_health_10_0.png)
+![png](health_post/support_post_health_10_0.png)
 
 
 
@@ -198,7 +197,7 @@ plt.show()
 ```
 
 
-![png](support_post_health_files/support_post_health_11_0.png)
+![png](health_post/support_post_health_11_0.png)
 
 
 ## Dive Into Sleep
@@ -232,7 +231,7 @@ plt.legend(loc='lower right')
 
 
 
-![png](support_post_health_files/support_post_health_14_1.png)
+![png](health_post/support_post_health_14_1.png)
 
 
 ## Sleep Efficiency Is A Blackbox Number, Disregarding
@@ -257,7 +256,7 @@ df_monthly[['date','totalSleepMinutesAsleep', 'totalSleep_deep_mins','totalSleep
 
 
 
-![png](support_post_health_files/support_post_health_16_1.png)
+![png](health_post/support_post_health_16_1.png)
 
 
 
@@ -291,7 +290,7 @@ plt.show()
 
 
 
-![png](support_post_health_files/support_post_health_18_1.png)
+![png](health_post/support_post_health_18_1.png)
 
 
 
@@ -315,7 +314,7 @@ plt.show()
 
 
 
-![png](support_post_health_files/support_post_health_19_1.png)
+![png](health_post/support_post_health_19_1.png)
 
 
 ## Now we got a broad view of things improving, albeit still very far from ideal!
@@ -336,7 +335,7 @@ df_dow[['totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins']]
 
 
 
-![png](support_post_health_files/support_post_health_21_1.png)
+![png](health_post/support_post_health_21_1.png)
 
 
 
@@ -380,7 +379,7 @@ df_dow.plot.barh(x='day', y=['totalSleep_rem_mins','totalSleep_deep_mins'],title
 
 
 
-![png](support_post_health_files/support_post_health_23_2.png)
+![png](health_post/support_post_health_23_2.png)
 
 
 ## Explain Box and Whiskers Plot
@@ -396,7 +395,7 @@ g.fig.set_size_inches(14,10)
 ```
 
 
-![png](support_post_health_files/support_post_health_25_0.png)
+![png](health_post/support_post_health_25_0.png)
 
 
 A box plot perfectly illustrates what we can do with basic statistical features:
@@ -1131,7 +1130,7 @@ ax2.plot([-1, 2], [10, 10], "k--")
 
 
 
-![png](support_post_health_files/support_post_health_44_1.png)
+![png](health_post/support_post_health_44_1.png)
 
 
 
@@ -1147,7 +1146,7 @@ temp.transpose().reset_index().plot(kind='line',grid=True,subplots=False,x='inde
 
 
 
-![png](support_post_health_files/support_post_health_45_1.png)
+![png](health_post/support_post_health_45_1.png)
 
 
 
@@ -1165,7 +1164,7 @@ ax.set_ylim([45, 115])
 
 
 
-![png](support_post_health_files/support_post_health_46_1.png)
+![png](health_post/support_post_health_46_1.png)
 
 
 
@@ -1181,7 +1180,7 @@ temp.transpose().reset_index()[['index', 'cholesterol', 'hdl cholesterol','ldl c
 
 
 
-![png](support_post_health_files/support_post_health_47_1.png)
+![png](health_post/support_post_health_47_1.png)
 
 
 
@@ -1198,7 +1197,7 @@ plt.show()
 ```
 
 
-![png](support_post_health_files/support_post_health_48_0.png)
+![png](health_post/support_post_health_48_0.png)
 
 
 
