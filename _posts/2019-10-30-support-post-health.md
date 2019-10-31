@@ -57,7 +57,6 @@ These active and sedentary minutes below exhibit the inverse relationship that o
 
 As you can see here, the sleep efficiency metric doesn't really seem to correlate to sleep minutes.  This number is a bit of a black box and due to insufficient information on the calculation I'm going to disregard it for now.
 
-
 I have always suffered from terrible insomnia, and no matter how much sleep hygiene and tricks I still haven't made too much progress. BUT at first glance, it does seem to be stabilizing and sloping upward (although not very dramatically).
 
 ![png](../images/health_post/support_post_health_14_1.png)
@@ -70,11 +69,10 @@ If we zoom in a bit closer, I think we can see how much 'opportunity' as I'm sti
 ![png](../images/health_post/support_post_health_16_1.png)
 
 
-If I smooth it out over a quarter, I can take some solace in that there is some upward move.  Hopefully this continues as I have a large hike up to 8 hours!
 
 ![png](../images/health_post/support_post_health_18_1.png)
 
-
+If I smooth it out over a quarter, I can take some solace in that there is some upward move.  Hopefully this continues as I have a large hike up to 8 hours!
 
 ![png](../images/health_post/support_post_health_19_1.png)
 
