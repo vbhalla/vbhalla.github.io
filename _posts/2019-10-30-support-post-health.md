@@ -8,7 +8,11 @@ categories:
 published: true
 ---
 
-In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  It's been a rollercoaster of emotions: daunting, confusing, intimidating, saddening, madding, and even quite empowering.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my bread and butter; infrastructure, experimentation, mining for insights, and bringing it all together is what I love doing what I do.  I wondered if I could swapping out the business for my body?  Like most things, much easier said than done....enjoy!
+In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization and turning it around is my bread and butter; infrastructure, experimentation, mining for insights, and bringing it all together is what I love doing.  Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails.
+
+![png](../images/health_post/support_post_health_1.png)
+
+I wondered if I could swap out the business for my body?  Like most things, much easier said than done....enjoy!
 
 ## Monthly Cumulative - Weekdays
 
