@@ -10,7 +10,7 @@ published: true
 
 In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  It's been a rollercoaster of emotions: daunting, confusing, intimidating, saddening, madding, and even quite empowering.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my bread and butter; infrastructure, experimentation, mining for insights, and bringing it all together is what I love doing what I do.  I wondered if I could swapping out the business for my body?  Like most things, much easier said than done....enjoy!
 
-## Sums - Weekday
+## Monthly Cumulative - Weekdays
 
 
 ```python
@@ -20,12 +20,9 @@ df_monthly.reset_index(inplace=True)
 df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].plot(subplots=True,x='date',figsize=(12,9), sharex=True, legend=True,title='Monthly Cumulative Calories, Steps, Distances')
 ```
 
-
 ![png](../images/health_post/support_post_health_6_1.png)
 
-
-
-## Monthly Averages 
+## Monthly Averages - Weekdays
 
 
 ```python
@@ -51,28 +48,6 @@ plt.show()
 ![png](../images/health_post/support_post_health_8_0.png)
 
 
-
-```python
-df_monthly = df_master[(~df_master.day.isin(['Saturday','Sunday']))&(df_master.date>'2018-01-01')&(df_master.totalSleepMinutesAsleep>0)&(df_master.totalSleep_light_mins>0)].groupby(pd.Grouper(key='date', freq='M'))[cols_avg].agg('mean')
-df_monthly = sleep_calcs(df_monthly)
-corr_cols = ['calories', 'steps', 'mins_sedant', 'resting_hr','hr_total_calories', 'mins_active_light', 'calc_active_mins', 'totalSleepMinutesAsleep', 'totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins', 'totalSleep_wake_mins','totalSleepTimeInBed', 'sleep_efficiency']
-df_monthly.reset_index(inplace=True)
-corr_matrix = df_monthly[corr_cols].corr()
-
-# Setup
-fig, ax = plt.subplots(figsize=(14, 9))
-
-# vmin and vmax control the range of the colormap
-sns.heatmap(corr_matrix, cmap='RdBu', annot=True, fmt='.2f',
-           vmin=-1, vmax=1)
-
-plt.title("Correlations of Monthly Data from Jan 1, 2018")
-
-#plt.xticks(rotation=50) 
-# Add tight_layout to ensure the labels don't get cut off
-plt.tight_layout()
-plt.show()
-```
 
 
 ![png](../images/health_post/support_post_health_9_0.png)
@@ -100,26 +75,11 @@ plt.show()
 
 
 
-```python
-df_monthly.reset_index(inplace=True)
-df_monthly.plot(title='Monthly Avg Time Spent Sedentary Per Weekday', x='date', y= ['mins_sedant'],figsize=(14,9))
-plt.xlabel('date')
-plt.ylabel('minutes')
-plt.show()
-
-```
-
 
 ![png](../images/health_post/support_post_health_11_0.png)
 
 
 ## Dive Into Sleep
-
-
-```python
-df_monthly.columns
-```
-
 
 
 
@@ -128,30 +88,10 @@ df_monthly.columns
 
 
 
-```python
-df_monthly = df_master[(~df_master.day.isin(['Saturday','Sunday']))&(df_master.date>'2017-07-01')&(df_master.totalSleepMinutesAsleep>0)&(df_master.totalSleep_light_mins>0)].groupby(pd.Grouper(key='date', freq='M'))[cols_avg].agg('mean')
-df_monthly.reset_index(inplace=True)
-df_monthly['date']=df_monthly['date'].dt.strftime('%Y-%m-%d')
-df_monthly[['date','sleep_efficiency','totalSleepMinutesAsleep']].plot(subplots=True,x='date',figsize=(12,7), sharex=False, legend=True,title='Monthly Avg. Sleep Metrics')
-plt.legend(loc='lower right')
-```
-
-
 ![png](../images/health_post/support_post_health_14_1.png)
 
 
 ## Sleep Efficiency Is A Blackbox Number, Disregarding
-
-
-```python
-df_monthly = df_master[(~df_master.day.isin(['Saturday','Sunday']))&(df_master.date>'2017-07-01')&((df_master.totalSleepMinutesAsleep>0))&((df_master.totalSleepMinutesAsleep>0))].groupby(pd.Grouper(key='date', freq='M'))[cols_avg].agg('mean')
-df_monthly.reset_index(inplace=True)
-df_monthly['date']=df_monthly['date'].dt.strftime('%Y-%m-%d')
-df_monthly[['date','totalSleepMinutesAsleep', 'totalSleep_deep_mins','totalSleep_rem_mins']].plot(subplots=True,x='date',figsize=(12,7), sharex=False, legend=True,title='Monthly Avg. Sleep Metrics')
-
-```
-
-
 
 
 
@@ -160,48 +100,8 @@ df_monthly[['date','totalSleepMinutesAsleep', 'totalSleep_deep_mins','totalSleep
 
 
 
-```python
-len(df_monthly.date)
-```
-
-
-
-
-    28
-
-
-
-
-```python
-fig = plt.figure(figsize=(16,8))
-df_monthly = df_master[(~df_master.day.isin(['Saturday','Sunday']))&(df_master.date>'2017-07-01')&((df_master.totalSleepMinutesAsleep>0))].groupby(pd.Grouper(key='date', freq='M'))[cols_avg].agg('mean')
-df_monthly.reset_index(inplace=True)
-df_monthly['date']=df_monthly['date'].dt.strftime('%Y-%m-%d')
-ax1 = df_monthly[['date','totalSleepMinutesAsleep']].plot(x='date',kind='bar',figsize=(12,7), sharex=False, legend=False,title='Monthly Avg. Total Sleep Minutes \n 8hrs = 480 mins',rot=45,color='Black')
-ax1.set_ylim([290, 485])
-ax1.plot([-1, 28], [480, 480], "k--")
-
-plt.show()
-
-```
-
-
 
 ![png](../images/health_post/support_post_health_18_1.png)
-
-
-
-```python
-fig = plt.figure(figsize=(16,8))
-df_monthly = df_master[(~df_master.day.isin(['Saturday','Sunday']))&(df_master.date>'2017-07-01')&((df_master.totalSleepMinutesAsleep>0))].groupby(pd.Grouper(key='date', freq='Q'))[cols_avg].agg('mean')
-df_monthly.reset_index(inplace=True)
-df_monthly['date']=df_monthly['date'].dt.strftime('%Y-%m-%d')
-ax1 = df_monthly[['date','totalSleepMinutesAsleep']].plot(x='date',kind='bar',figsize=(12,7), sharex=False, legend=False,title='Quarterly Avg. Total Sleep Minutes \n 8hrs = 480 mins',rot=45,color='Black')
-ax1.set_ylim([290, 400])
-ax1.plot([-1, 28], [480, 480], "k--")
-plt.show()
-
-```
 
 
 
@@ -222,29 +122,6 @@ df_dow[['totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins']]
 
 ![png](../images/health_post/support_post_health_21_1.png)
 
-
-
-```python
-df_monthly.columns
-```
-
-
-
-
-    Index(['date', 'calories', 'steps', 'dist', 'mins_sedant', 'hr_total_calories', 'mins_active_light', 'calc_active_mins', 'totalSleepMinutesAsleep', 'totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins', 'totalSleep_wake_mins', 'totalSleepTimeInBed', 'resting_hr', 'sleep_efficiency', 'sleep_minutesAsleep'], dtype='object')
-
-
-
-
-```python
-dow_cats= ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday','Saturday']
-dow_cats.reverse()
-df_dow = df_master[df_master.date>'2019-01-01'].groupby('day')[cols_avg].agg('mean').reindex(dow_cats) 
-df_dow.reset_index(inplace=True)
-#df_dow = sleep_calcs(df_dow)
-print(df_dow[['day','totalSleepMinutesAsleep']])
-df_dow.plot.barh(x='day', y=['totalSleep_rem_mins','totalSleep_deep_mins'],title='Avg Daily Sleep from Jan 2019',figsize=(12,8))#, color='seagreen')
-```
 
              day  totalSleepMinutesAsleep
     0   Saturday               397.404762
@@ -417,40 +294,6 @@ A box plot perfectly illustrates what we can do with basic statistical features:
 
 
 
-```python
-range_name='doc_lab_tests!A:O'
-```
-
-
-```python
-df_labs = gsheets_health.get_health_journal(range_name=range_name)
-
-```
-
-#### Formatting
-
-
-```python
-df_labs.Component=df_labs.Component.str.lower()
-
-df_labs['Threshold']= df_labs['Threshold'].replace(r'^\s*$', np.nan, regex=True)
-
-labs_arr = ['vitamin b12, serum','homocysteine, serum','glucose','zinc, serum','cholesterol','hdl cholesterol','ldl cholesterol']
-
-lab_date_cols = ['Component', '7/2/2015', '1/20/2017', '7/2/2017', '7/5/2017', '12/5/2017', '6/28/2018', '6/11/2019', '7/29/2019', '8/20/2019', '10/11/2019']
-
-thresholds = df_labs[['Component','Threshold']][df_labs.Threshold.notnull()]
-print(thresholds)
-df_labs_short = df_labs[lab_date_cols][df_labs.Component.isin(labs_arr)]
-# Remove everything after the comma
-df_labs_short['Component'] = df_labs_short['Component'].str.split(',').str[0]
-df_labs_short= df_labs_short.replace(r'^\s*$', np.nan, regex=True)
-df_labs_short.set_index('Component',inplace=True,drop=True)
-
-df_labs_short = df_labs_short.astype(float)
-```
-
-
 
 <div>
 <style scoped>
@@ -590,28 +433,6 @@ df_labs_short = df_labs_short.astype(float)
   </tbody>
 </table>
 </div>
-
-
-
-
-```python
-df_lipids = df_labs_short.transpose()
-```
-
-
-```python
-lipid_dict = {
-    'glucose':['6/28/2018', '6/11/2019','10/11/2019'],
-    'cholesterol':['6/28/2018', '6/11/2019','10/11/2019'],
-    'hdl cholesterol': ['6/28/2018', '6/11/2019','10/11/2019'],
-    'ldl cholesterol': ['6/28/2018', '6/11/2019','7/29/2019']
-}
-```
-
-
-```python
-df_lipids
-```
 
 
 
@@ -828,19 +649,6 @@ temp
 
 
 
-```python
-temp1 = pd.DataFrame(temp.stack()).reset_index()
-temp1.rename(columns = {'level_0':'component','level_1':'time',0:'value'}, inplace=True)
-```
-
-
-```python
-temp1
-```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -944,43 +752,12 @@ temp1
 
 
 
-```python
-fig = plt.figure(figsize=(12,4))
-ax1 = fig.add_subplot(121)
-ax2 = fig.add_subplot(122)
-
-x_label = ['July 2019','3 months later']
-df_lipids[['vitamin b12']] [df_lipids.index.isin(['8/20/2019', '10/11/2019'])].reset_index().plot(ax=ax1,x='index',y='vitamin b12',kind='bar',use_index=False,rot=45,legend=False,title='B12 Levels',color='Green')
-ax1.set_xticklabels(x_label)
-ax1.plot([-1, 2], [400, 400], "k--")
-
-x_label = ['July 2019','3 months later']
-df_lipids[['homocysteine']] [df_lipids.index.isin(['7/29/2019', '10/11/2019'])].reset_index().plot(ax=ax2,x='index',y='homocysteine',kind='bar',use_index=False,rot=45,legend=False,title='Homocysteine',color='LightBlue')
-ax2.set_xticklabels(x_label)
-ax2.plot([-1, 2], [10, 10], "k--")
-
-```
-
-
-
-
     [<matplotlib.lines.Line2D at 0x1a8ef04be0>]
 
 
 
 
 ![png](../images/health_post/support_post_health_44_1.png)
-
-
-
-```python
-temp.transpose().reset_index().plot(kind='line',grid=True,subplots=False,x='index',figsize=(12,9), sharex=True, legend=True,title='Levels')
-```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a8ddc3da0>
 
 
 
@@ -1007,16 +784,6 @@ ax.set_ylim([45, 115])
 
 
 
-```python
-temp.transpose().reset_index()[['index', 'cholesterol', 'hdl cholesterol','ldl cholesterol']].plot(kind='bar',grid=True,subplots=False,x='index',figsize=(12,9), sharex=True, legend=True,title='Lipid Panels')
-```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a81eb6e80>
-
-
 
 
 ![png](../images/health_post/support_post_health_47_1.png)
@@ -1039,30 +806,6 @@ plt.show()
 ![png](../images/health_post/support_post_health_48_0.png)
 
 
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
 
 # What Ranges?
 resting_HR - big negatives .78 on calc_acitve mins, -.55 with light sleep, .57 mins sedant, .63 steps 
