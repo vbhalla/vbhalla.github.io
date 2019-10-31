@@ -42,7 +42,7 @@ There is a lot of good stuff here, what is interesting to see here is that sende
 
 ![png](../images/health_post/support_post_health_9_0.png)
 
-These two exhibit the inverse relationship that we would expect, which is great to see as then that means we can start to trust this data a bit more (more on that later) .
+These active and sedentary minutes below exhibit the inverse relationship that one would expect, which is great to see as then that means we can start to trust this data a bit more (more on that later) .
 
 
 ![png](../images/health_post/support_post_health_10_0.png)
@@ -53,23 +53,24 @@ These two exhibit the inverse relationship that we would expect, which is great 
 ![png](../images/health_post/support_post_health_11_0.png)
 
 
-## Let's dive Into Sleep
+### Let's Dive Into Sleep, What is Sleep Efficiency? 
 
-As you can see here, the sleep efficiency metric doesn't really seem to correlate to sleep minutes.  This number seems a bit of a black box and due to insufficient understanding I'm going to disregard it for now.
+As you can see here, the sleep efficiency metric doesn't really seem to correlate to sleep minutes.  This number is a bit of a black box and due to insufficient information on the calculation I'm going to disregard it for now.
 
+
+I have always suffered from terrible insomnia, and no matter how much sleep hygiene and tricks I still haven't made too much progress. BUT at first glance, it does seem to be stabilizing and sloping upward (although not very dramatically).
 
 ![png](../images/health_post/support_post_health_14_1.png)
 
 
-## Sleep Efficiency Is A Blackbox Number, Disregarding
-
+If we zoom in a bit closer, I think we can see how much 'opportunity' as I'm still no way near 8 hours, which is quite troubling actually!  
 
 
 
 ![png](../images/health_post/support_post_health_16_1.png)
 
 
-
+If I smooth it out over a quarter, I can take some solace in that there is some upward move.  Hopefully this continues as I have a large hike up to 8 hours!
 
 ![png](../images/health_post/support_post_health_18_1.png)
 
