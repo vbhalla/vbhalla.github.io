@@ -5,89 +5,10 @@ title: Healthy Data Wrangling
 date: '2019-10-28 12:07:25 +0000'
 categories:
   - data
-published: false
+published: true
 ---
 
-The past year I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  It has been a sea of emotions: daunting, confusing, intimidating, saddening, and actually quite empowering.  That is a story for another day.  Building a data-driven foundation culture into an organization: infrastructure, experimentation, and consistently monitoring, mining, extrapolating for insights in order to make large calculated bets has been a huge part of what I love about my jobs.  I kinda wondered, why can't I do that same thing; swapping out the business ofr my body :-)  I'd like to share a subset of a project, it was humbling how much more complicated, noisy, and just plain messy some of the data contained in these platforms currently are.
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-%matplotlib inline
-import seaborn as sns
-
-import fitbit_batch_update_script
-
-from importlib import reload as reload
-```
-
-
-```python
-# put this into 1 function for fitbit batch script
-import glob
-import os
-import re
-list_of_files = glob.glob('./master_data_backups/*.f') 
-latest_file = max(list_of_files, key=os.path.getctime)
-last_run_date = re.search("([0-9]{4}\-[0-9]{2}\-[0-9]{2})", latest_file).group(1)
-print ("Latest File: ",latest_file)
-
-from datetime import date,timedelta, datetime
-last_run_date = datetime.strptime(last_run_date, '%Y-%m-%d').date()
-print("Last Run Date:",last_run_date)
-df_master = pd.read_feather(latest_file)
-```
-
-    Latest File:  ./master_data_backups/df_master_2019-10-24.f
-
-
-
-```python
-def analysis_calcs(df_master):
-    #gives day of the week column
-    df_master['date'] = pd.to_datetime(df_master['date'])
-    df_master['day'] = df_master['date'].dt.day_name()
-    #df_master['day'] = pd.to_datetime(df_master['date']).dt.day_name()
-    # sum calories
-    df_master['hr_total_calories'] = df_master[['hr_OutofRange_caloriesOut', 'hr_FatBurn_caloriesOut', 'hr_Cardio_caloriesOut', 'hr_Peak_caloriesOut']].sum(axis=1)
-    #del columns
-    del_cols = ['hr_OutofRange_max','hr_FatBurn_max','hr_Cardio_max','hr_Peak_max','hr_OutofRange_min','hr_FatBurn_min','hr_Cardio_min','hr_Peak_min']
-    df_master.drop(columns=del_cols,inplace=True)
-    
-    return df_master
-
-def sleep_calcs(df):
-    
-    df['calc_deep_sleep_perc']=df['totalSleep_deep_mins']/df['totalSleepTimeInBed']
-    df['calc_light_sleep_perc']=df['totalSleep_light_mins']/df['totalSleepTimeInBed']
-    df['calc_rem_sleep_perc']=df['totalSleep_rem_mins']/df['totalSleepTimeInBed']
-        
-    return df
-
-#see if this works
-def mins_to_hours_calc(df, cols):
-    for i in cols:
-        #df_monthly[i] = pd.to_datetime(df_monthly[i], unit='m').dt.strftime('%H:%M')
-        df[i] = pd.to_datetime(df[i], unit='m').dt.strftime('%H:%M')
-    
-    return df
-```
-
-
-```python
-df_master = analysis_calcs(df_master)
-
-#convert to hours after converting to percentages
-df_master = sleep_calcs(df_master)
-
-```
-
-
-```python
-cols_agg = ['date', 'calories', 'steps', 'dist', 'mins_sedant','hr_total_calories', 'mins_active_light','calc_active_mins', 'totalSleepMinutesAsleep','totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins', 'totalSleep_wake_mins', 'totalSleepTimeInBed','sleep_start','sleep_minutesAsleep'] 
-cols_avg = ['date', 'calories', 'steps', 'dist', 'mins_sedant','hr_total_calories', 'mins_active_light','calc_active_mins', 'totalSleepMinutesAsleep','totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins', 'totalSleep_wake_mins', 'totalSleepTimeInBed','sleep_start','resting_hr','sleep_efficiency','sleep_minutesAsleep']
-```
+In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  It's been a rollercoaster of emotions: daunting, confusing, intimidating, saddening, madding, and even quite empowering.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my bread and butter; infrastructure, experimentation, mining for insights, and bringing it all together is what I love doing what I do.  I wondered if I could swapping out the business for my body?  Like most things, much easier said than done....enjoy!
 
 ## Sums - Weekday
 
@@ -98,14 +19,6 @@ df_monthly[['calories', 'steps', 'dist', 'mins_sedant', 'hr_total_calories', 'mi
 df_monthly.reset_index(inplace=True)
 df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].plot(subplots=True,x='date',figsize=(12,9), sharex=True, legend=True,title='Monthly Cumulative Calories, Steps, Distances')
 ```
-
-
-
-
-    array([<matplotlib.axes._subplots.AxesSubplot object at 0x1a87a95908>,
-           <matplotlib.axes._subplots.AxesSubplot object at 0x1a87cc04e0>,
-           <matplotlib.axes._subplots.AxesSubplot object at 0x1a87ad4860>],
-          dtype=object)
 
 
 ![png](../images/health_post/support_post_health_6_1.png)
@@ -224,13 +137,6 @@ plt.legend(loc='lower right')
 ```
 
 
-
-
-    <matplotlib.legend.Legend at 0x1a847d8630>
-
-
-
-
 ![png](../images/health_post/support_post_health_14_1.png)
 
 
@@ -246,12 +152,6 @@ df_monthly[['date','totalSleepMinutesAsleep', 'totalSleep_deep_mins','totalSleep
 ```
 
 
-
-
-    array([<matplotlib.axes._subplots.AxesSubplot object at 0x1a8b5252b0>,
-           <matplotlib.axes._subplots.AxesSubplot object at 0x1a867fa438>,
-           <matplotlib.axes._subplots.AxesSubplot object at 0x1a87047208>],
-          dtype=object)
 
 
 
@@ -286,9 +186,6 @@ plt.show()
 ```
 
 
-    <matplotlib.figure.Figure at 0x1a8e480c18>
-
-
 
 ![png](../images/health_post/support_post_health_18_1.png)
 
@@ -304,13 +201,7 @@ ax1.set_ylim([290, 400])
 ax1.plot([-1, 28], [480, 480], "k--")
 plt.show()
 
-
-
-
 ```
-
-
-    <matplotlib.figure.Figure at 0x1a86a4ff98>
 
 
 
@@ -326,12 +217,6 @@ df_dow = df_master[(df_master.date>'2018-05-01')&(df_master.totalSleepMinutesAsl
 df_dow.index=df_dow.index.strftime('%Y-%m-%d')
 df_dow[['totalSleep_deep_mins', 'totalSleep_light_mins', 'totalSleep_rem_mins']].plot(kind='bar',stacked=True,rot=45,figsize=(12,8),title='Minutes of Sleep Distributed Across Sleep Cycle')
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a7ac5c898>
-
 
 
 
@@ -373,12 +258,6 @@ df_dow.plot.barh(x='day', y=['totalSleep_rem_mins','totalSleep_deep_mins'],title
 
 
 
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a8ddbac88>
-
-
-
-
 ![png](../images/health_post/support_post_health_23_2.png)
 
 
@@ -405,32 +284,10 @@ A box plot perfectly illustrates what we can do with basic statistical features:
 •Are the whiskers very long? That means your data has a high standard deviation and variance i.e the values are spread out and highly varying. If you have long whiskers on one side of the box but not the other, then your data may be highly varying only in one direction.
 
 
-```python
-from importlib import reload as reload
-```
-
-
-```python
-reload(gsheets_health)
-```
-
-
-
-
-    <module 'gsheets_health' from '/Users/Shalu/Dropbox/Administrative/Documents/Health/datascience/main/gsheets_health.py'>
-
 
 
 ## Next Let's Look At Some Vitals and Biomarkers!
 
-
-```python
-import gsheets_health
-df_daily_journal = gsheets_health.get_health_journal()
-#Remove Future Dates
-df_daily_journal = df_journal[df_journal.dow.notnull()]
-df_daily_journal.tail(3)
-```
 
 
 
@@ -574,18 +431,6 @@ df_labs = gsheets_health.get_health_journal(range_name=range_name)
 
 
 ```python
-df_labs.shape
-```
-
-
-
-
-    (76, 15)
-
-
-
-
-```python
 df_labs.Component=df_labs.Component.str.lower()
 
 df_labs['Threshold']= df_labs['Threshold'].replace(r'^\s*$', np.nan, regex=True)
@@ -604,12 +449,6 @@ df_labs_short.set_index('Component',inplace=True,drop=True)
 
 df_labs_short = df_labs_short.astype(float)
 ```
-
-
-```python
-df_labs_short
-```
-
 
 
 
@@ -1240,12 +1079,3 @@ steps = , min 12500
 
 
 
-
-```python
-
-```
-
-
-```python
-
-```
