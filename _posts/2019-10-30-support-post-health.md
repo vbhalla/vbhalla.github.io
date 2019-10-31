@@ -33,16 +33,16 @@ This was rather promising to see, as I've really committed to improving my cardi
 
 Now I've hooked into quite a few disparate places and munged them together.  I think a correlation plat may be a good way start off developing an underestanding of this unfamiliar dataset and the inter-relationships among features.  
 
-There is a lot of good stuff here, what is interesting to see here is that sendentary minutes in addition to active minutes seem pretty correlated to my resting heart rate.
 
 ![png](../images/health_post/support_post_health_8_0.png)
 
-These two exhibit the inverse relationship that we would expect, which is great to see as then that means we can start to trust this data a bit more.
+
+There is a lot of good stuff here, what is interesting to see here is that sendentary minutes in addition to active minutes seem pretty correlated to my resting heart rate.
 
 
 ![png](../images/health_post/support_post_health_9_0.png)
 
-
+These two exhibit the inverse relationship that we would expect, which is great to see as then that means we can start to trust this data a bit more (more on that later) .
 
 
 ![png](../images/health_post/support_post_health_10_0.png)
@@ -53,9 +53,9 @@ These two exhibit the inverse relationship that we would expect, which is great 
 ![png](../images/health_post/support_post_health_11_0.png)
 
 
-## Dive Into Sleep
+## Let's dive Into Sleep
 
-
+As you can see here, the sleep efficiency metric doesn't really seem to correlate to sleep minutes.  This number seems a bit of a black box and due to insufficient understanding I'm going to disregard it for now.
 
 
 ![png](../images/health_post/support_post_health_14_1.png)
