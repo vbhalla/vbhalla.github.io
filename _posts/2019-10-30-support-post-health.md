@@ -123,14 +123,13 @@ Yikes....
 
 Well after all of that, I don't have a conclusion rather than a few more To-Dos :) 
 
-These To-Dos definitely include talking to my doctor particularly about my LDL and evaluating if I need to run some more tests!  But this was both a painful exercise and equally motivating as it's great to see progress as well as see things that don't "budge" as then you can run anotehr experiment or switch tactics.  
+These To-Dos definitely include talking to my doctor particularly about my LDL and evaluating if I need to run some more tests!  In addition, my wife is going to ensure I go to a sleep doctor and has threatened to drag me there herself if I don't make that appointment ASAP.
+
+I did also gain a set of average metrics across week, particularly active minutes and hr_calories which can ensure I'm at least maintaining my momentum as I don't want that resting heart rate to start creeping back up.
+
+But this was both a painful exercise and equally motivating as it's great to see progress as well as see things that don't "budge" as then you can run anotehr experiment or switch tactics.  
 
 P.S. I know a few folks have asked for some of the underlying code, apologies as I need to modularize it a bit as some of the api formatting could use a cleanup.  I plan to do that by next week and will post it in the repo shortly after!
-
-
-# What Ranges?
-The big metrics to focus on are:
-calc_active_mins, mins_sedant, hr_total_calories, steps, and sleep
 
 
 
