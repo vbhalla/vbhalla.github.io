@@ -19,15 +19,25 @@ df_monthly[['calories', 'steps', 'dist', 'mins_sedant', 'hr_total_calories', 'mi
 df_monthly.reset_index(inplace=True)
 df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].plot(subplots=True,x='date',figsize=(12,9), sharex=True, legend=True,title='Monthly Cumulative Calories, Steps, Distances')
 ```
+After hooking into a few apis and a lot of data wrangling, we're finally in a place to get started to see what we're working with.  
+
+Some quick plots around my wearable shows the increase in activity the past 3 months, but it (I) bounce around.
 
 ![png](../images/health_post/support_post_health_6_1.png)
 
+That's all well and good, but cumulative monthly values are difficult for me to wrap my head around, but perhaps weekday averages, as my weekends tend to be rather varied from week to week.
+
 ## Monthly Averages - Weekdays
 
+This was rather promising to see, as I've really committed to improving my cardiovascular health due to all the heart disease in my family and I'm finally starting to see some progress which is extremely motivating!
+
+Now I've hooked into quite a few disparate places and munged them together.  I think a correlation plat may be a good way start off developing an underestanding of this unfamiliar dataset and the inter-relationships among features.  
+
+There is a lot of good stuff here, what is interesting to see here is that sendentary minutes in addition to active minutes seem pretty correlated to my resting heart rate.
 
 ![png](../images/health_post/support_post_health_8_0.png)
 
-
+These two exhibit the inverse relationship that we would expect, which is great to see as then that means we can start to trust this data a bit more.
 
 
 ![png](../images/health_post/support_post_health_9_0.png)
