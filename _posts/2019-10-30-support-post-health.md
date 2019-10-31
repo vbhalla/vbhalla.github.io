@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization in order to drive change for turnarounds is kinda my thing.  Starting with infrastructure and developing baselines, to experimentation, mining for insights, and then bringing it all together.  
+In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization in order to drive transformational change is my background.  Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together.  
 
 Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails.
 
