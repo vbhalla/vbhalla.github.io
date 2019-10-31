@@ -136,7 +136,8 @@ I did also gain a set of average metrics across week, particularly active minute
 
 But this was both a painful exercise from a data munging perspective, but I think the outcome is particularly motivating as it's great to see progress as well as see things that don't "budge" as then you can run anotehr experiment or switch tactics.  
 
-P.S. I know a few folks have asked for some of the underlying code, apologies as I need to modularize it a bit as some of the api formatting could use a cleanup.  I plan to do that by next week and will post it in the repo shortly after!
+P.S. 
+These apis and 3rd party data sources were particularly messy, so I need to modularize my code a bit before posting in the repo, so it will be in there in a week or so!
 
 
 
