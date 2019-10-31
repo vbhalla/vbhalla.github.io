@@ -7,74 +7,67 @@ categories:
 published: true
 ---
 
-In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization in order to drive transformational change is my background.  Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together.  
+In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my background.  Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I'm both good at and enjoy greatly.  You see where I'm going with this?  
 
 Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails.
 
 ![png](../images/health_post/support_post_health_1.png)
 
-If I could swap out the business for my body, would the same rules apply?  What is similar is that it is much easier said than done....enjoy!
+If I could swap out the business for my body, would the same rules apply?  First rule is that it is much easier said than done....enjoy!
 
 ## Monthly Cumulative - Weekdays
 
 
 ```python
-df_monthly = df_master[~df_master.day.isin(['Saturday','Sunday'])].groupby(pd.Grouper(key='date', freq='M'))[cols_avg].agg('sum')
 df_monthly[['calories', 'steps', 'dist', 'mins_sedant', 'hr_total_calories', 'mins_active_light', 'calc_active_mins', 'totalSleepMinutesAsleep', 'totalSleep_deep_mins', 'totalSleep_rem_mins', 'totalSleep_wake_mins', 'totalSleepTimeInBed']][df_monthly.index > '2017-07-31'].tail(10)
 df_monthly.reset_index(inplace=True)
 df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].plot(subplots=True,x='date',figsize=(12,9), sharex=True, legend=True,title='Monthly Cumulative Calories, Steps, Distances')
 ```
-After hooking into a few apis and a lot of data wrangling, we're finally in a place to get started to see what we're working with.  
+After hooking into a few apis and a lot of data wrangling, which took awhile, we're finally in a place to get started to see what we're working with.  
 
 Some quick plots around my wearable shows the increase in activity the past 3 months, but it (I) bounce around.
 
 ![png](../images/health_post/support_post_health_6_1.png)
 
-That's all well and good, but cumulative monthly values are difficult for me to wrap my head around, but perhaps weekday averages, as my weekends tend to be rather varied from week to week.
+That's all well and good, but cumulative monthly values are difficult for me to wrap my head around and bring into my day-to-day.  Perhaps averages may be more interesting and I'll scrub out my weekends, as my weekends tend to be rather varied from week to week.
 
 ## Monthly Averages - Weekdays
 
-This was rather promising to see, as I've really committed to improving my cardiovascular health due to all the heart disease in my family and I'm finally starting to see some progress which is extremely motivating!
-
-Now I've hooked into quite a few disparate places and munged them together.  I think a correlation plat may be a good way start off developing an underestanding of this unfamiliar dataset and the inter-relationships among features.  
-
-
 ![png](../images/health_post/support_post_health_8_0.png)
 
+This was rather promising to see, as I've really committed to improving my cardiovascular health due to all the heart disease in my family and I'm finally starting to see some progress which is extremely motivating!
 
-There is a lot of good stuff here, what is interesting to see here is that sendentary minutes in addition to active minutes seem pretty correlated to my resting heart rate.
+Now I've hooked into quite a few disparate data platforms and munged them together.  I think a correlation plot, although visually intimidating at first, may be a good way start off developing an underestanding of this unfamiliar dataset and the inter-relationships among features.
 
 
 ![png](../images/health_post/support_post_health_9_0.png)
 
-These active and sedentary minutes below exhibit the inverse relationship that one would expect, which is great to see as then that means we can start to trust this data a bit more (more on that later) .
+There is a lot of good stuff here, what is interesting to see here is that sendentary minutes in addition to active minutes seem pretty correlated to my resting heart rate.
 
+These active and sedentary minutes below exhibit the inverse relationship that one would expect, which is great to see as then that means we can start to trust this data a bit more (that's not always the case and frequently cause a lot of headaches for data scientists later on).
 
 ![png](../images/health_post/support_post_health_10_0.png)
-
-
-
 
 ![png](../images/health_post/support_post_health_11_0.png)
 
 
 ### Let's Dive Into Sleep, What is Sleep Efficiency? 
 
-As you can see here, the sleep efficiency metric doesn't really seem to correlate to sleep minutes.  This number is a bit of a black box and due to insufficient information on the calculation I'm going to disregard it for now.
-
 ![png](../images/health_post/support_post_health_14_1.png)
 
-I have always suffered from terrible insomnia, and no matter how much sleep hygiene and tricks I still haven't made too much progress. BUT at first glance, it does seem to be stabilizing and sloping upward (although not very dramatically).
+As you can see, the sleep efficiency metric doesn't appear to correlate to sleep minutes and I'm unsure what it means.  This number is a bit of a black box and due to insufficient information on the calculation I'm going to disregard it for now.
 
 ![png](../images/health_post/support_post_health_16_1.png)
 
-If we zoom in a bit closer, I think we can see how much 'opportunity' as I'm still no way near 8 hours, which is quite troubling actually.  There is more and more research out on the hazards to heath caused by sleep deprivation.
+I have always suffered from terrible insomnia, and no matter how much sleep hygiene and tricks I still haven't made too much progress. BUT at first glance, it does seem to be stabilizing and sloping upward (although not very dramatically).
 
 ![png](../images/health_post/support_post_health_18_1.png)
 
-If I smooth it out over a quarter, I can take some solace in that there is some upward move.  Hopefully this continues as I have a large hike up to 8 hours!  
+If we zoom in a bit closer, I think we can see how much 'opportunity' as I'm still no way near 8 hours, which is quite troubling actually.  There is more and more research out on the hazards to heath caused by sleep deprivation.
 
 ![png](../images/health_post/support_post_health_19_1.png)
+
+If I smooth it out over a quarter, I can take some solace in that there is some upward move.  Hopefully this continues as I have a large hike up to 8 hours!  
 
 Broadly things seem to improving, hopefully I can increase that slope quite a bit. 
 
