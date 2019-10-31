@@ -8,11 +8,13 @@ categories:
 published: true
 ---
 
-In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization in order to drive change for turnarounds is kinda my thing.  Starting with infrastructure and developing baselines, to experimentation, mining for insights, and then bringing it all together.  Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails.
+In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization in order to drive change for turnarounds is kinda my thing.  Starting with infrastructure and developing baselines, to experimentation, mining for insights, and then bringing it all together.  
+
+Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails.
 
 ![png](../images/health_post/support_post_health_1.png)
 
-I wondered if I could swap out the business for my body?  Like most things, much easier said than done....enjoy!
+If I could swap out the business for my body, would the same rules apply?  What is similar is that it is much easier said than done....enjoy!
 
 ## Monthly Cumulative - Weekdays
 
