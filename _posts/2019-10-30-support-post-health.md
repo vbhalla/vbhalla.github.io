@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Healthy Data Wrangling
+title: Wellness Visuals And Healthy Data Wrangling
 date: '2019-10-28 12:07:25 +0000'
 categories:
   - data
@@ -9,7 +9,7 @@ published: true
 
 In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my background.  Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I'm both good at and enjoy greatly.  You see where I'm going with this?  
 
-Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails.
+Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails. I'll exclude the genome sequencing I did from this post as that's extremely dense, confusing, and is out of scope for basic evaluation.
 
 ![png](../images/health_post/support_post_health_1.png)
 
