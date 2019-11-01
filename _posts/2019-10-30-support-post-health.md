@@ -9,11 +9,11 @@ published: true
 
 In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my background.  Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I'm both good at and enjoy greatly.  You see where I'm going with this?  
 
-Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails. I'll exclude the genome sequencing I did from this post as that's extremely dense, confusing, and is out of scope for basic evaluation.
+Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails. I'll exclude the genome sequencing I did from this post as that's extremely dense, confusing, and is out of scope for basic evaluation. I am a strong believer in personalized wellness being the future and this exercise was truly eye opening in showing me how much I likely don't know about what is possible in the present.
 
 ![png](../images/health_post/support_post_health_1.png)
 
-If I could swap out the business for my body, would the same rules apply?  First rule is that it is much easier said than done....enjoy!
+If I could swap out the business for my body, would the same rules apply?  First rule is that it is much easier said than done....enjoy!  
 
 ## Monthly Cumulative - Weekdays
 
