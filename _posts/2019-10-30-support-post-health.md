@@ -7,13 +7,13 @@ categories:
 published: true
 ---
 
-In the past year, I have really come to appreciate the rollercoaster of health both personally and how it relates to the people we care about.  All that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my background.  Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I'm both good at and enjoy greatly.  You see where I'm going with this?  
+In the past year I have come to appreciate the rollercoaster of health personally and especially how it relates to the people I care about. All of that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my background. Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then assembling it all together in order to drive transformational change is something I’m both proficient at and greatly enjoy. Do you see where I’m going with this?  
 
-Given some health setbacks, even with the limited data I currently had, it seemed pretty obvious that things had gone off the rails. I'll exclude the genome sequencing I did from this post as that's extremely dense, confusing, and is out of scope for basic evaluation. I am a strong believer in personalized wellness being the future and this exercise was truly eye opening in showing me how much I likely don't know about what is possible in the present.
+Given multiple health setbacks, even with the limited data I currently had, it was alarming to see how things had gone off the rails.  It's amazing seeing the plethora of data sources out there.  I'm including most of it in this post, with the exception of the genome sequencing I did from this post as that's extremely dense, confusing, and is out of scope for basic evaluation. 
 
 ![png](../images/health_post/support_post_health_1.png)
 
-If I could swap out the business for my body, would the same rules apply?  First rule is that it is much easier said than done....enjoy!  
+If I could swap out the business for my body, would the same rules apply? Rule #1, it is much easier said than done….enjoy!
 
 ## Monthly Cumulative - Weekdays
 
@@ -23,28 +23,28 @@ df_monthly[['calories', 'steps', 'dist', 'mins_sedant', 'hr_total_calories', 'mi
 df_monthly.reset_index(inplace=True)
 df_monthly[['date','calories', 'steps', 'dist']][df_monthly.date>'2017-11-01'].plot(subplots=True,x='date',figsize=(12,9), sharex=True, legend=True,title='Monthly Cumulative Calories, Steps, Distances')
 ```
-After hooking into a few apis and a lot of data wrangling, which took awhile, we're finally in a place to get started to see what we're working with.  
+After hooking into a few apis and a lot of data wrangling, we are prepared to start interpreting the results. A few quick plots around my wearable show the increase in activity for the past 3 months, but the data fluctuates.
 
 Some quick plots around my wearable shows the increase in activity the past 3 months, but it (I) bounce around.
 
 ![png](../images/health_post/support_post_health_6_1.png)
 
-That's all well and good, but cumulative monthly values are difficult for me to wrap my head around and bring into my day-to-day.  Perhaps averages may be more interesting and I'll scrub out my weekends, as my weekends tend to be rather varied from week to week.
+That’s all well and good, but cumulative monthly values are difficult for me to wrap my head around and bring into my day-to-day. Since my weekend schedule varies, I’ll remove the weekends and focus on the averages.
 
 ## Monthly Averages - Weekdays
 
 ![png](../images/health_post/support_post_health_8_0.png)
 
-This was rather promising to see, as I've really committed to improving my cardiovascular health due to all the heart disease in my family and I'm finally starting to see some progress which is extremely motivating!
+This was rather promising to see since I have committed to improving my cardiovascular health due to the predisposition of heart disease in my family. I’m finally starting to see some progress which is extremely motivating!
 
 Now I've hooked into quite a few disparate data platforms and munged them together.  I think a correlation plot, although visually intimidating at first, may be a good way start off developing an underestanding of this unfamiliar dataset and the inter-relationships among features.
 
 
 ![png](../images/health_post/support_post_health_9_0.png)
 
-There is a lot of good stuff here, what is interesting to see here is that sendentary minutes in addition to active minutes seem pretty correlated to my resting heart rate.
+It is interesting to see how sedentary minutes in addition to active minutes are directly correlated to my resting heart rate.
 
-These active and sedentary minutes below exhibit the inverse relationship that one would expect, which is great to see as then that means we can start to trust this data a bit more (that's not always the case and frequently cause a lot of headaches for data scientists later on).
+The active and sedentary minutes below exhibit the inverse relationship that one would expect, which is encouraging to see as that means we can start to trust this data a bit more (that’s not always the case and frequently causes challenges for data scientists after the fact).
 
 ![png](../images/health_post/support_post_health_10_0.png)
 
@@ -55,11 +55,11 @@ These active and sedentary minutes below exhibit the inverse relationship that o
 
 ![png](../images/health_post/support_post_health_14_1.png)
 
-As you can see above, the sleep efficiency metric doesn't appear too correlated to sleep minutes.  This number is a bit of a black box and due to insufficient information on the calculation I'm going to disregard it for now.
+As you can see above, the sleep efficiency metric doesn’t appear to correlate with sleep minutes. This number is a black box, and due to insufficient information in the calculation, I’m going to disregard it for now.
 
 ![png](../images/health_post/support_post_health_16_1.png)
 
-I have always suffered from terrible insomnia, and no matter how much sleep hygiene and tricks I still haven't felt I've made too much progress. <b>BUT</b> at first glance, it does seem to be stabilizing and sloping upward.  Think we need to take a closer view.
+I have always suffered from severe insomnia, despite practicing good sleep hygiene in the past few months, I still haven’t felt like I’ve made significant progress. BUT, at first glance, it does seem to be stabilizing and sloping upward. Let’s analyze the findings.
 
 
 ![png](../images/health_post/support_post_health_18_1.png)
@@ -91,7 +91,7 @@ This this calls for a box plot, a favorite of mine.
 
 ![png](../images/health_post/support_post_health_25_0.png)
 
-That's better, the box plot is great here as if the box plot is short then that implies that our data is not very spread out (Wednesday).  Should the median value be closer to the bottom, then we know the distribution is mostly towards lower values and the whiskers really give us a much better idea of the variance and standard deviations.
+That's more desirable, the box plot is great here as if the box plot is short then that implies that our data is not very spread out (Wednesday).  Should the median value be closer to the bottom, then we know the distribution is mostly towards lower values and the whiskers really give us a much better idea of the variance and standard deviations.
 
 
 
@@ -100,7 +100,7 @@ That's better, the box plot is great here as if the box plot is short then that 
     [<matplotlib.lines.Line2D at 0x1a8ef04be0>]
 
 
-I have modified my diet a bit over the past 3 months and included a b-complex supplement, which appears to be helping here:
+I have modified my diet a bit over the past 3 months and have included a b-complex supplement, which appears to be helping here:
 
 ![png](../images/health_post/support_post_health_44_1.png)
 
@@ -116,7 +116,7 @@ Taking a closer look, it seems like the glucose has improved based on my diet an
 ![png](../images/health_post/support_post_health_46_1.png)
 
 
-Unfortunately my cholesterol seems to be getting worse, which is not good due to the high risk of cardiovascular disease in my family.
+Unfortunately, my cholesterol is increasing, which is not desirable to the high risk of advanced cardiovascular disease in my family.
 
 
 ![png](../images/health_post/support_post_health_47_1.png)
@@ -127,18 +127,18 @@ Yikes....that LDL is no bueno
 
 ## To Dos
 
-Well after all of that, I don't have a conclusion rather than a few more To-Dos :) 
+After considerable research, I don’t have a conclusion rather than an extensive to-do list.  
 
-That includes talking to my doctor particularly about my LDL levels and evaluating if I need to run some more tests (I hear the LDL-p is a good number)!  
+That includes talking to my doctor particularly about my LDL levels and evaluating if I need to run more tests (I hear the LDL-p is a good metric).   
 
-In addition, my wife is going to ensure I go to a sleep doctor and has threatened to drag me there herself if I don't make that appointment ASAP.
+In addition, my wife is going to ensure I get evaluated by a sleep doctor and has threatened to drag me there herself if I don’t make that appointment ASAP.
 
-I did also gain a set of average metrics across week, particularly active minutes and hr_calories which can ensure I'm at least maintaining my momentum as I don't want that resting heart rate to start creeping back up.
+Also, I did gain a set of average metrics across the week, particularly active minutes and hr_calories. I can confirm that I’m at least maintaining my momentum since I don’t want my resting heart rate to start creeping back up.
 
-But this was both a painful exercise from a data munging perspective, but I think the outcome is particularly motivating as it's great to see progress as well as see things that don't "budge" as then you can run anotehr experiment or switch tactics.  
-
+This was a painful exercise from a data munging perspective, but I think the outcome is particularly motivating. It was both encouraging and disappointing to see progress and decline with biomarkers.
+  
 P.S. 
-These apis and 3rd party data sources were particularly messy, so I need to modularize my code a bit before posting in the repo, so it will be in there in a week or so!
+These apis and 3rd party data sources were particularly messy, so I need to modularize my code a bit before posting to my repo, so it will be in there in a week or so!
 
 
 
