@@ -30,7 +30,7 @@ Some quick plots around my wearable shows the increase in activity the past 3 mo
 ![png](../images/health_post/support_post_health_6_1.png)
 
 
-That’s all well and good, but cumulative monthly values are difficult for me to wrap my head around and bring into my day-to-day. Since my weekend schedule varies, I’ll remove the weekends and focus on the averages.
+That’s all well and good, but cumulative monthly values are difficult for me to wrap my head around and bring into my day-to-day routine. Since my weekend schedule varies, I’ll remove the weekends and focus on the averages.
 
 
 ## Monthly Averages - Weekdays
@@ -44,22 +44,28 @@ Now I've hooked into quite a few disparate data platforms and munged them togeth
 
 ![png](../images/health_post/support_post_health_9_0.png)
 
+
 It is interesting to see how sedentary minutes in addition to active minutes are directly correlated to my resting heart rate.
 
 The active and sedentary minutes below exhibit the inverse relationship that one would expect, which is encouraging to see as that means we can start to trust this data a bit more (that’s not always the case and frequently causes challenges for data scientists after the fact).
 
+
 ![png](../images/health_post/support_post_health_10_0.png)
+
 
 ![png](../images/health_post/support_post_health_11_0.png)
 
 
 ### Let's Dive Into Sleep, What is Sleep Efficiency? 
 
+
 ![png](../images/health_post/support_post_health_14_1.png)
 
 As you can see above, the sleep efficiency metric doesn’t appear to correlate with sleep minutes. This number is a black box, and due to insufficient information in the calculation, I’m going to disregard it for now.
 
+
 ![png](../images/health_post/support_post_health_16_1.png)
+
 
 I have always suffered from severe insomnia, despite practicing good sleep hygiene in the past few months, I still haven’t felt like I’ve made significant progress. BUT, at first glance, it does seem to be stabilizing and sloping upward. Let’s analyze the findings.
 
@@ -82,13 +88,15 @@ Let's dig a bit deeper and see if we can get a bit more granular, particularly t
 
 ![png](../images/health_post/support_post_health_21_1.png)
 
+
 The above gave us a weekly view, but I wonder if there is some variability within the week?
+
 
 ![png](../images/health_post/support_post_health_23_2.png)
 
 We can see a bit of variability, but the above doesn't really give us any idea of the variance aside from the means across our weekdays.
 
-This this calls for a box plot, a favorite of mine.
+This calls for a box plot, a favorite of mine.
 
 
 ![png](../images/health_post/support_post_health_25_0.png)
@@ -112,6 +120,7 @@ Now let's get to the nitty gritty, glucose and lipid panels.
 
 ![png](../images/health_post/support_post_health_45_1.png)
 
+
 Taking a closer look, it seems like the glucose has improved based on my diet and exercise modifications!
 
 
@@ -127,7 +136,7 @@ Yikes....that LDL is no bueno
 
 ![png](../images/health_post/support_post_health_48_0.png)
 
-## To Dos
+## Closing Remarks
 
 After considerable research, I don’t have a conclusion rather than an extensive to-do list.  
 
@@ -135,10 +144,8 @@ That includes talking to my doctor particularly about my LDL levels and evaluati
 
 In addition, my wife is going to ensure I get evaluated by a sleep doctor and has threatened to drag me there herself if I don’t make that appointment ASAP.
 
-Also, I did gain a set of average metrics across the week, particularly active minutes and hr_calories. I can confirm that I’m at least maintaining my momentum since I don’t want my resting heart rate to start creeping back up.
-
-This was a painful exercise from a data munging perspective, but I think the outcome is particularly motivating. It was both encouraging and disappointing to see progress and decline with biomarkers.
-  
+Also, I did gain a set of average metrics across the week, particularly active minutes and hr_calories which I can use to ensure I keep my exercise and activity levels up.
+ 
 P.S. 
 These apis and 3rd party data sources were particularly messy, so I need to modularize my code a bit before posting to my repo, so it will be in there in a week or so!
 
