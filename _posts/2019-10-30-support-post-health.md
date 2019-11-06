@@ -7,7 +7,9 @@ categories:
 published: true
 ---
 
-In the past year I have come to appreciate the rollercoaster of health and especially how it relates to the people I care about. All of that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an organization is my background. Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I’m both proficient at and greatly enjoy. Do you see where I’m going with this?  
+In the past year I have come to appreciate the rollercoaster of health and especially how it relates to the people I care about. All of that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an business is my background. 
+
+Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I’m both proficient at and greatly enjoy. Do you see where I’m going with this?  
 
 Given multiple health setbacks, even with the limited data I currently had, it was alarming to see how things had gone off the rails, while also amazing seeing the plethora of data sources available these days.  I'm including most sources in this post, with the exception of the genome sequencing I did from this post as that's extremely dense, confusing, and is out of scope for basic evaluation. 
 
