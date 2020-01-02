@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-One of my summer goals was to explore some new data science technologies, which definitely would need to include all the innovation happening on the deployment side of production machine learning models.  A few years ago, I had the experience of running my models on an EC2 instances, which was not an ideal experience.  So I took a look at AWS Sagemaker, which allows you to build and deploy machine learning models and they also have some good [documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) filled with examples.
+One of my summer goals was to explore some new data science and machine learning technologies, which definitely would need to include all the innovation happening on the deployment side of production machine learning models.  A few years ago, I had the experience of running my models on an EC2 instances, which was not an ideal experience.  So I took a look at AWS Sagemaker, which allows you to build and deploy machine learning models and they also have some good [documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) filled with examples.
 
 One of the relevant data sets in the examples is the [IMDb Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/), so best if we just use that.  
 
