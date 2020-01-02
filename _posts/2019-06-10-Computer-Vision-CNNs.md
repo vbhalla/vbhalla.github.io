@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-I have been looking for a fun computer vision use case so I can play around with a CNN implementation. I haven't worked on too many deep learning problems and the technology has evolved so quickly.  My wife and I don't regularly organize and backup my iPhone pictures.  As I was going through the thousands of pictures, I realized a common theme: 
+I have been looking for a fun machine learning computer vision use case so I can play around with a CNN implementation. I haven't worked on too many deep learning problems and the technology has evolved so quickly.  My wife and I don't regularly organize and backup my iPhone pictures.  As I was going through the thousands of pictures, I realized a common theme: 
 
 <img src="../images/cnns_post/Lass.jpg" width="150" align="middle">
 ---
