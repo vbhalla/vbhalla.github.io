@@ -12,7 +12,7 @@ I have been looking for a fun computer vision use case so I can play around with
 <img src="../images/cnns_post/Lass.jpg" width="150" align="middle">
 ---
 
-The above is my beloved puppy and she has been the object of much of our photography (we're a bit obsessed), unfortunately every one of the images is labelled is some non-descriptive format i.e. 000224444.jpg.  
+The above is my beloved puppy and she has been the object of much of our photography (we're a bit obsessed), unfortunately each one of these images are labeled in some non-descriptive format i.e. 000224444.jpg.  
 
 This could be a fun use case for a convolutional neural network (CNNs) as they are pretty good for computer vision, right?
 > I would want to build a model that could accurately find my dog and/or identify a person and then run it through all the photos on my hard drive identifying which ones contained my pup.  I can then move those over to a relevant folder and then inspect the remainder, right?
