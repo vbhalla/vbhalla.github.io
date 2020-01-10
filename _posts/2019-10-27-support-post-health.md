@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wellness Visuals And Healthy Data Wrangling
-date: '2019-10-28 12:07:25 +0000'
+date: '2019-10-27 12:07:25 +0000'
 categories:
   - data
 published: true
