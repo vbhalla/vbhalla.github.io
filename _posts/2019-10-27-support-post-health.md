@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-In the past year I have come to appreciate the rollercoaster of health and especially how it relates to the people I care about. All of that is a story for another day, but building a data-driven foundation and weaving it into the DNA of an business is my background. 
+In the past year I have come to appreciate the rollercoaster of health and especially how it relates to the people I care about. All of that is a story for another day, but building a data-driven foundation and weaving it into the DNA of a company is my background. 
 
 Soup to nuts, starting with infrastructure and developing baselines, mining for insights, to eventual experimentation, and then bringing it all together in order to drive transformational change is something I’m both proficient at and greatly enjoy. Do you see where I’m going with this?  
 
