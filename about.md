@@ -10,7 +10,7 @@ His multi-disciplnary background allows a holistic approach to building great bu
 
 ### Little More About Me
 
-In my spare time I like to play with my puppy, easy hiking, riding his bike around Jersey City, and traveling with my better half.
+In my spare time I like to play with my puppy, easy hiking, riding my bike around Jersey City, and traveling with my better half.
 
 Below is a picture of a hike my wife and I took in Tanzania, where I proposed and thankfully she said yes; phewww saving me from an awkward 2 days down the mountain had she not. 
 
