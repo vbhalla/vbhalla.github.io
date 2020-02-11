@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Sagemaker and Sentiment Analysis 
+title: NLP - Sentiment Analysis and AWS Sagemaker
 date: '2019-11-01 12:07:25 +0000'
 categories:
   - data
