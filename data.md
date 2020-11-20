@@ -1,5 +1,5 @@
 ---
 layout: category
-category-name: business
-permalink: "/category/business"
+category-name: data
+permalink: /category/data
 ---
