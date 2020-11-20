@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Retro on Supervised Learning and Loan Defaults
+categories:
+  - data
 published: true
 ---
 

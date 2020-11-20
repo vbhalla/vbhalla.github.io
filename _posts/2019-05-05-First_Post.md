@@ -1,6 +1,8 @@
 ---
 layout: post
 title: We're up and running!
+categories:
+  - data
 published: true
 ---
 

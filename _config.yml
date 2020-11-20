@@ -54,9 +54,10 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-collections:
-  stories:
-    output: true
+# collections:
+#   stories:
+#     output: true
+#     permalink: /stories/:path/
 
 permalink: /:title/
 
