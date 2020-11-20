@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Test
+date: '2016-11-01 12:07:25 +0000'
 permalink: /stories/
 published: true
 
