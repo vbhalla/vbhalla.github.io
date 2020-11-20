@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Testing
+title: Test
+permalink: /stories/
 published: true
+
 ---
 Testing
 
