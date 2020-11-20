@@ -3,6 +3,7 @@ layout: category
 title: business
 category-name: business
 permalink: /business/
+published: true
 ---
 
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
