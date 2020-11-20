@@ -1,5 +1,5 @@
 ---
 layout: default
-category-name: data
-permalink: "/data/"
+permalink: /data/
 ---
+Data Here
