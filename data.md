@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: default
 category-name: data
 permalink: "/data/"
 ---

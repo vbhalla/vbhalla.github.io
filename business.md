@@ -1,8 +1,8 @@
 ---
 layout: category
-title: About
+title: business
 category-name: business
-permalink: /category/
+permalink: /business/
 ---
 
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
