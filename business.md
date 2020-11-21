@@ -1,7 +1,7 @@
 ---
 layout: category
-title: change to business
-category-name: data
+title: Business
+category-name: business
 permalink: /business/
 ---
 
