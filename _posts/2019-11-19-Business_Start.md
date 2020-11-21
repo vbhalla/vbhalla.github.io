@@ -31,7 +31,7 @@ These are some of the timing (days) of certain insurance actions, which made me 
 
 ![png](../images/insurance_post/image.png)
 
-A few questions we considered after the "break":
+<ins>A few questions we considered after the "break":</ins>
 
 a) How does the regulatory component of insurance work? More specifically, how do we do insurance legally?
 
@@ -43,7 +43,7 @@ We started asking a lot of questions to a lot of people in our network who intro
 
 ![png](../images/insurance_post/insurance_distribution_groups.png)
 
-Post-Lock Mortgage Workflows
+<ins>Post-Lock Mortgage Workflows</ins>
 
 After a few weeks swimming around the datalake, I felt that I had done enough homework to earn the right to start asking questions. It always starts with people and process for highly intensive operational workflows and context/empathy is the most important thing; rather than simply rows and columns from a SQL query or a histogram from a python script.
 
