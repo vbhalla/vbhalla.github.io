@@ -60,9 +60,9 @@ We needed to completely rethink and rebuild the insurance workflows to first and
 * We needed both a licensed insurance function to facilitate communications and bottle-necked workflows and an engineering function capable of architect-ing around all the ambiguity of mortgage, the complexity of insurance partner integrations, and eventually the internal tools needed by the Better Cover Concierge (our working term for the Better Cover customer facing team)
 
 Every day we learn more and the board keeps shifting and well sometimes it feels like:
-
+<br>
 ![png](../images/insurance_post/help_pool.png)
-
+<br>
 And that’s how we’re developing the road-map; with Stuart and Ethan on-board full-time, I am confident we'll keep lining up new strategies for success as the table keeps shifting and thankful for the full support of Vishal Garg and senior leadership, particularly Erik Bern, Paula, Megan B., and Jerry.  
 
 We'll keep you guys posted on our progress!
