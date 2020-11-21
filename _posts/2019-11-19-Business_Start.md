@@ -13,7 +13,7 @@ So I stepped away from my CRO position on the mortgage side and dove right into 
 
 I always talk to my teams on developing frameworks for addressing ambiguity, as in: How do you solve a problem that isn’t defined? You instantly can become overwhelmed thinking, "What do we need to build vs buy? What’s an AMS, E-Rater, and 20 other confusing insurance services? Can we partner with someone who has this stuff? What team do we need? We have home appraisal data, but a lot is in pdfs? If I hire folks can I set them up to succeed if I don't know what to do? Wait how does insurance actually work? What’s a producer license? Is there a test for insurance licensing? How do we take examinations and what does fulfillment mean? Coverage B?  Why are property and casualty 2 separate exams in Jersey and 1 in NY"
 
-The list goes on and on in a paralyzing fashion.  Say it's a lot like shooting pool; you just have to start moving……………… <b>pick a direction....any direction</b>
+The list goes on and on in a paralyzing fashion.  Say it's a lot like shooting pool; you just have to start moving………………pick a direction....any direction
 
 I often use pool metaphors with my teams, albeit I know nothing about pool.  
 
@@ -62,7 +62,7 @@ We needed to completely rethink and rebuild the insurance workflows to first and
 
 Every day we learn more and the board keeps shifting and well sometimes it feels like:
 
-![png](../images/insurance_post/help_pool.jpeg)
+![png](../images/insurance_post/help_pool.png)
 
 And that’s how we’re developing the road-map; with Stuart and Ethan on-board full-time, I am confident we'll keep lining up new strategies for success as the table keeps shifting and thankful for the full support of Vishal Garg and senior leadership, particularly Erik Bern, Paula, Megan B., and Jerry.  
 
