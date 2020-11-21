@@ -7,7 +7,7 @@ categories:
 published: true
 
 ---
-Reposted Legacy Post [here](https://internal-blog.bettercover.com/insurance-what-where-do-we-start/ "insurance link") 
+Reposted Legacy Post [here](https://internal-blog.bettercover.com/insurance-what-where-do-we-start/ "insurance link") <br>
 So when Mr. Garg told me he wanted me to do insurance, particularly homeowners insurance…I had a think on it. I thought well he built an amazing mortgage company, so if he says we gotta do it I guess we gotta do it. Traditionally I work with tech companies on reinventing existing or pivoting into new business...so I’m used to a lot of ambiguity. Plus I thought: We actually ‘physically’ get insight into the home via an appraisal, so that data must be valuable in a data product.  
 
 So I stepped away from my CRO position on the mortgage side and dove right into the insurance side head first. <b>Easy peasey, right?  Umm…not quite…not ever </b>
