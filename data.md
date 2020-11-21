@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: category
 title: Data
+category-name: data
 permalink: /data/
-published: true
 ---
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
