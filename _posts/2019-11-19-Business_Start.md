@@ -51,9 +51,7 @@ We knew that property characteristics were important and the appraisal/valuation
 
 After the India trip, I fully appreciated how closely our mortgage teams work with the insurance agents and how insurance entities (Agencies/MGAs/Carriers) have built out their own call centers with their own highly unique workflows. I knew we needed a great partner that had these insurance operations in place, and that we needed state licenses in order to handle any insurance related customer communication.
 
-So,  after the initial 'break' our next few shots became clear
-
-![png](../images/insurance_post/small_pool.png)
+<ins>After the initial 'break' our next few shots became clear:</ins>
 
 * We had to go down the agency path; which included taking the property and casualty exams (800-900 pages of study material varying by state) in order to get individual licenses, an entity license in 1 state, and a company to help us get reciprocity and licenses across all states
 * Critical stakeholders to this initiative included the Better Mortgage appraisal and insurance teams
