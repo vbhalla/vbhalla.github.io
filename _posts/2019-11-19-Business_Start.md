@@ -7,7 +7,7 @@ categories:
 published: true
 
 ---
-Reposted Legacy Post From 2019 [here](https://internal-blog.bettercover.com/insurance-what-where-do-we-start/ "insurance link")
+Reposted 2019 from Legacy Site [here](https://internal-blog.bettercover.com/insurance-what-where-do-we-start/ "insurance link")
 
 So when Mr. Garg told me he wanted me to do insurance, particularly homeowners insurance…I had a think on it. I thought well he built an amazing mortgage company, so if he says we gotta do it I guess we gotta do it. Traditionally I work with tech companies on reinventing existing or pivoting into new business...so I’m used to a lot of ambiguity. Plus I thought: We actually ‘physically’ get insight into the home via an appraisal, so that data must be valuable in a data product.  
 
@@ -61,9 +61,9 @@ We needed to completely rethink and rebuild the insurance workflows to first and
 * We needed both a licensed insurance function to facilitate communications and bottle-necked workflows and an engineering function capable of architect-ing around all the ambiguity of mortgage, the complexity of insurance partner integrations, and eventually the internal tools needed by the Better Cover Concierge (our working term for the Better Cover customer facing team)
 
 Every day we learn more and the board keeps shifting and well sometimes it feels like:
-<br>
+<br><br>
 ![png](../images/insurance_post/help_pool.png)
-<br>
+<br><br>
 And that’s how we’re developing the road-map; with Stuart and Ethan on-board full-time, I am confident we'll keep lining up new strategies for success as the table keeps shifting and thankful for the full support of Vishal Garg and senior leadership, particularly Erik Bern, Paula, Megan B., and Jerry.  
 
 We'll keep you guys posted on our progress!
