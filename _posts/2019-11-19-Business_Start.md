@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Repost] Insurance? Where do we start?
+title: Insurance What? Where do we start?
 date: '2018-11-01 12:07:25 +0000'
 categories:
   - business
