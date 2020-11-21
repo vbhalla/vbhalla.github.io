@@ -39,10 +39,10 @@ b) How does our amazing operations team handle insurance in our post-lock mortga
 
 Let’s start with the regulatory framework:
 
-We started asking a lot of questions to a lot of people in our network who introduced others in their networks, who could help shine some light on the space. On top of that we did a lot of reading/googling with every tidbit or keyword that came up in any conversation. The visual below is particularly helpful in defining the first common growth path, and four main entity structures, in the insurance space:
+We started asking a lot of questions to a lot of people in our network who introduced others in their networks, who could help shine some light on the space. On top of that we did a lot of reading/googling with every tidbit or keyword that came up in any conversation. The visual below is particularly helpful in defining the first common growth path, and four main entity structures, in the insurance space:<br>
 
 ![png](../images/insurance_post/insurance_distribution_groups.png)
-
+<br>
 <ins>Post-Lock Mortgage Workflows</ins>
 
 After a few weeks swimming around the datalake, I felt that I had done enough homework to earn the right to start asking questions. It always starts with people and process for highly intensive operational workflows and context/empathy is the most important thing; rather than simply rows and columns from a SQL query or a histogram from a python script.
