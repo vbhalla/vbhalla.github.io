@@ -1,8 +1,7 @@
 ---
 layout: category
-title: business
-category-name: business
+title: change to business
+category-name: data
 permalink: /business/
 ---
 
-Testing Testing Ttesting
