@@ -4,7 +4,6 @@ title: Data
 permalink: /data/
 published: true
 ---
-
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <div class="sidebar" id="sidebar">
