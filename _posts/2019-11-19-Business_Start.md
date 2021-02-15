@@ -7,7 +7,7 @@ categories:
 published: true
 
 ---
-Reposted 2019 from Legacy Site [here](https://internal-blog.bettercover.com/insurance-what-where-do-we-start/ "insurance link")
+Reposted 2019 from Legacy Site 
 
 So when Mr. Garg told me he wanted me to do insurance, particularly homeowners insurance…I had a think on it. I thought well he built an amazing mortgage company, so if he says we gotta do it I guess we gotta do it. Traditionally I work with tech companies on reinventing existing or pivoting into new business...so I’m used to a lot of ambiguity. Plus I thought: We actually ‘physically’ get insight into the home via an appraisal, so that data must be valuable in a data product.  
 
@@ -68,5 +68,5 @@ And that’s how we’re developing the road-map; with Stuart and Ethan on-board
 
 We'll keep you guys posted on our progress!
 
-
+[Reposted from Here](https://internal-blog.bettercover.com/insurance-what-where-do-we-start/ "insurance link")
 
