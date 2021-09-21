@@ -45,7 +45,7 @@ You need a ML stack that can support 3 basic functions (many ML tools/platforms 
 
 **Core DS Skill Sets**
 
-Majority of teams at startups require more development on software engineering fundamentals when the current group is comprised of "hackers" and product thinking/communication in order to help define the problems that can be solved by leveraging data science.
+Majority of teams at startups consist of "hackers" lacking both software engineering fundamentals and product chops.  These are core requirements for building high quality impactiful products and need to be part of a resource/hiring plan.
 
 <img src="../images/building_ds/DSSkillsets.png" style="width: 500px;" >
 
@@ -125,5 +125,5 @@ Cons:
 ## Putting it all together
 Successfully standing up a data science function at a later stage startup is a complicated endeavor as every startup is different in addition to its goals for establishing a DS team.  In this case the fucntion's objective is to leverage data science to create production quality products.  A good place to start is establishing:
 - process and infrastructure to support a DS workflow 
-- team skillsets including product and software engineering chops
+- team skillsets including product and software engineering chops 
 - establishing where DS fits into the org and an operating model that ensures the ability to map execution to business expecations
