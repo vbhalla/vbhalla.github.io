@@ -87,9 +87,8 @@ This is not DS and run counter to any foundational core work necessary.
 
 - DS solves for quality BUT business expects speed
 
-- Work is deemed “academic”, foundation and team are both scrapped partially completed 
-<br><br>><br><br><br><br><br><br>
-
+- Work is deemed “academic”, foundation and team are both scrapped partially completed <br>
+<br><br><br><br><br><br><br><br><br>
 ## Which Model To Choose?
 
 **So Why Centralize?**
@@ -126,4 +125,4 @@ Cons:
 Successfully standing up a data science function at a later stage startup is a complicated endeavor as every startup is different in addition to its goals for establishing a DS team.  In this case the fucntion's objective is to leverage data science to create production quality products.  A good place to start is establishing:
 - process and infrastructure to support a DS workflow 
 - team skillsets including product and software engineering chops 
-- establishing where DS fits into the org and an operating model that ensures the ability to map execution to business expecations
+- most importantly: establishing where DS fits into the org and an operating model that ensures the ability to map execution to business expecations
