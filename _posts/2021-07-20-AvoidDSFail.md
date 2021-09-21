@@ -24,6 +24,9 @@ Building functions to support data management and analytics is a post in itself.
 
 ---
 **Core DS Workflow**
+
+You need to build a core DS workflow
+
 ![png](../images/building_ds/DSWorkflow.png)
 
 *Process:*  
@@ -41,32 +44,53 @@ You need a ML stack that can support 3 basic functions (many ML tools/platforms 
 ---
 
 **Core DS Skill Sets**
-![png](../images/building_ds/DSSkillsets.png)
+
+Majority of teams at startups require more development on software engineering fundamentals when the current group is comprised of "hackers" and insights/communication in order to help define the problems that can be solved by leveraging data science.
+
+<img src="../images/building_ds/DSSkillsets.png" style="width: 500px;" >
 
 ---
 
 **Where does data science fit in the current org?**
+
 The above are table stakes, the number 1 reason cause of failure are alignment of incentives and establishing clear ownership.
 
-![png](../images/building_ds/ds_team_puzzle.png)
+<img src="../images/building_ds/ds_team_puzzle.png" style="width: 700px;" >
 
 **Data Science Operating Models**
+
 It’s extremely important to commit to an operating model to ensure incentives are aligned, this of course can be revisited as the business changes; stakeholder needs and/or resource planning.  
 
-A basketball metaphor probably illustrates this best.
+A basketball metaphor probably illustrates this best.  
+
 ![png](../images/building_ds/basketball.png)
 
-Standing up a DS function at later stage startups often fail primarily because of ownership and incentives; choosing a model can help facilitate this crucial conversation with executive leadership.
+Standing up a DS function at later stage startups often fail primarily because of ownership and incentives; choosing a model can help facilitate this crucial conversation with executive leadership.  What happens if you don't choose?
 
-Not choosing a model often results in one of the following 1 of two failed outcomes:
+
 ![png](../images/building_ds/flow_chart.png)
+
+Not choosing a model often results in one of the following 1 of two failed outcomes (extend the basketball metaphor):
 
 ![arcade](../images/building_ds/arcade.jpeg)
 
-<img src="../images/building_ds/brokenBball.png" height="200" align="middle">
+Dave and Busters Arcade BBall Game
+Incentives to allocate resources:
+- to the most influential business or exec at the time
+- as quickly as possible whenever possible
+
+This is not DS and run counter to any foundational core work necessary
 
 
-[//]: # ![academic](../images/building_ds/brokenBball.png)
+
+<img src="../images/building_ds/brokenBball.png" style="width: 250px;" >
+“Academic Fail”
+
+- DS solves for quality BUT business expects speed
+
+- Work is deemed “academic”, foundation and team are both scrapped partially completed 
+
+
 
 **Why Centralize?**
 
@@ -93,6 +117,6 @@ Cons:
 - Doesn’t Scale - lacking standardization across all lines of businesses
 
 
-**Easier Visual:**
+**Embed vs. Centralize:**
 
 ![png](../images/building_ds/table_centralembed.png)
