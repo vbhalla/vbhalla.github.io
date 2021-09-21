@@ -1,7 +1,7 @@
 ---
 published: false
 ---
-## Why standing up a data science function at later stage startups usually fails.
+## Why standing up a data science function at later stage startups usually fails
 
 OK, so a company just raised a large round focused on becoming more tech enabled and AI with data science being core to our future growth.  We’ve heard these stories so many times, frequently ending in failure.  The below is a framework to help get started on the right foot.
 
@@ -15,7 +15,7 @@ A data science team can be instrumental in helping transition to a state of data
 
 Building functions to support data management and analytics is a post in itself.  Now let’s say that your data org is in a good place, and you clearly state that you want your data science function to leverage DS to create production quality products.  Production quality can be defined as requiring reproducibility and scalability; rather than insights which can be one-off. 
 
-**What’s needed for a strong foundation?**
+<h2>What’s needed for a strong foundation?</h2>
 - Core DS Workflow Capabilities
 
 - Build out DS skills creating a well rounded DS team
@@ -45,7 +45,7 @@ You need a ML stack that can support 3 basic functions (many ML tools/platforms 
 
 **Core DS Skill Sets**
 
-Majority of teams at startups require more development on software engineering fundamentals when the current group is comprised of "hackers" and insights/communication in order to help define the problems that can be solved by leveraging data science.
+Majority of teams at startups require more development on software engineering fundamentals when the current group is comprised of "hackers" and product thinking/communication in order to help define the problems that can be solved by leveraging data science.
 
 <img src="../images/building_ds/DSSkillsets.png" style="width: 500px;" >
 
@@ -67,32 +67,32 @@ A basketball metaphor probably illustrates this best.
 
 Standing up a DS function at later stage startups often fail primarily because of ownership and incentives; choosing a model can help facilitate this crucial conversation with executive leadership.  What happens if you don't choose?
 
-
 ![png](../images/building_ds/flow_chart.png)
 
-Not choosing a model often results in one of the following 1 of two failed outcomes (extend the basketball metaphor):
+Not choosing a model often results in one of the following 1 of two failed outcomes (extend the basketball metaphor):  
+<br><br>
+<img align="right" src="../images/building_ds/arcade.jpeg" style="width: 250px">
 
-![arcade](../images/building_ds/arcade.jpeg)
+**Dave and Busters Arcade BBall Game**.  
 
-Dave and Busters Arcade BBall Game
 Incentives to allocate resources:
 - to the most influential business or exec at the time
 - as quickly as possible whenever possible
 
-This is not DS and run counter to any foundational core work necessary
+This is not DS and run counter to any foundational core work necessary.  
 
-
-
-<img src="../images/building_ds/brokenBball.png" style="width: 250px;" >
-“Academic Fail”
+<br><br><br><br><br><br><br><br><br>
+<img align="right" src="../images/building_ds/brokenBball.png" style="width: 300px;" >
+**“Academic Fail”**
 
 - DS solves for quality BUT business expects speed
 
 - Work is deemed “academic”, foundation and team are both scrapped partially completed 
+<br><br>><br><br><br><br><br><br>
 
+## Which Model To Choose?
 
-
-**Why Centralize?**
+**So Why Centralize?**
 
 Pros: 
 - Global  - Bring data from all parts of company enabling a broader understanding of customer experience
@@ -120,3 +120,10 @@ Cons:
 **Embed vs. Centralize:**
 
 ![png](../images/building_ds/table_centralembed.png)
+
+
+## Putting it all together
+Successfully standing up a data science function at a later stage startup is a complicated endeavor as every startup is different in addition to its goals for establishing a DS team.  In this case the fucntion's objective is to leverage data science to create production quality products.  A good place to start is establishing:
+- process and infrastructure to support a DS workflow 
+- team skillsets including product and software engineering chops
+- establishing where DS fits into the org and an operating model that ensures the ability to map execution to business expecations
