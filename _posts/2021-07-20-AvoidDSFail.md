@@ -1,9 +1,9 @@
 ---
 published: false
 ---
-## Why standing up a data science function at later stage startups usually fails
+## Standing up a data science function at later stage startups often ends in failure: a framework for success
 
-OK, so a company just raised a large round focused on becoming more tech enabled and AI with data science being core to our future growth.  We’ve heard these stories so many times, frequently ending in failure.  The below is a framework to help get started on the right foot.
+OK, a startup just raised a large round focused on becoming more tech enabled leveraging ML/AI with data science being core to future scalable growth.  We’ve heard these stories so many times, and almost every data scientist has seen these initiatives end in failure.  The below is a framework to help get started on the right foot.
 
 **What do you expect DS to do?**
 
