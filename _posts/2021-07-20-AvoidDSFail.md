@@ -22,24 +22,28 @@ Building functions to support data management and analytics is a post in itself.
 
 - Establish the DS team - org model and ownership
 
-
+---
 **Core DS Workflow**
 ![png](../images/building_ds/DSWorkflow.png)
 
-Process 
+*Process:*  
 Documentation and workflow standards across business narrative (problem statements) down to the technical nitty gritty; at startups simplicity and a doc framework that is centralized is important.  For example, N miscellaneous powerpoints shouldn’t serve as documentation and DS teams keep powerpoint to a minimum.
 
-Architecture
-You need a ML stack that can support 3 basic functions (many ML tools/platforms provide more than 1 of these functions).  Quite simply these are:
+*Architecture:*    
+You need a ML stack that can support 3 basic functions (many ML tools/platforms provide more than 1 of these functions).  
 
-Feature Store - how we enrich and transform both internal and external 3rd party data
+- Feature Store - how we enrich and transform both internal and external 3rd party data
 
-Model Store - how we build and deploy DS products/models
+- Model Store - how we build and deploy DS products/models
 
-Monitoring Store - how we monitor and improve those products/models
+- Monitoring Store - how we monitor and improve those products/models
+
+---
 
 **Core DS Skill Sets**
 ![png](../images/building_ds/DSSkillsets.png)
+
+---
 
 **Where does data science fit in the current org?**
 The above are table stakes, the number 1 reason cause of failure are alignment of incentives and establishing clear ownership.
@@ -57,28 +61,38 @@ Standing up a DS function at later stage startups often fail primarily because o
 Not choosing a model often results in one of the following 1 of two failed outcomes:
 ![png](../images/building_ds/flow_chart.png)
 
-![png](../images/building_ds/davebusters.png)
-![png](../images/building_ds/academic_fail.png)
+![arcade](../images/building_ds/arcade.jpeg)
 
-Why Centralize?
+<img src="../images/building_ds/brokenBball.png" height="200" align="middle">
+
+
+[//]: # ![academic](../images/building_ds/brokenBball.png)
+
+**Why Centralize?**
+
 Pros: 
-Global  - Bring data from all parts of company enabling a broader understanding of customer experience
-Streamlined Management - career paths, peers, mentorship, collaboration, and recruiting
-Accountability to DS - incentivizing resource allocation to include foundational DS 
-Scale - Uniform best practices, platform, and tools across lines of business, executives, and products
+- Global  - Bring data from all parts of company enabling a broader understanding of customer experience
+- Streamlined Management - career paths, peers, mentorship, collaboration, and recruiting
+- Accountability to DS - incentivizing resource allocation to include foundational DS 
+- Scale - Uniform best practices, platform, and tools across lines of business, executives, and products
+
 Early Cons:
-Quality over Speed
-Difficult for managing business lines of at very different stages and needs
+- Quality over Speed
+- Difficult for managing business lines of at very different stages and needs
 
-Why Embed?
+
+**Why Embed?**
+
 Pros:
-Local – customized to accommodate needs for business lines in different stages of development
-Accountability to business line - incentivizes resource allocation focused on unique needs of individual business line
+- Local – customized to accommodate needs for business lines in different stages of development
+- Accountability to business line - incentivizes resource allocation focused on unique needs of individual business line
+
 Cons:
-Speed over quality 
-Complex Management - career paths, peers, mentorship, collaboration, and recruiting
-Doesn’t Scale - lacking standardization across all lines of businesses
+- Speed over quality 
+- Complex Management - career paths, peers, mentorship, collaboration, and recruiting
+- Doesn’t Scale - lacking standardization across all lines of businesses
 
-Recap: 
+
+**Easier Visual:**
+
 ![png](../images/building_ds/table_centralembed.png)
-
