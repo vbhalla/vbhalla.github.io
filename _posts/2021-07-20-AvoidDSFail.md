@@ -16,6 +16,7 @@ A data science team can be instrumental in helping transition to a state of data
 Building functions to support data management and analytics is a post in itself.  Now let’s say that your data org is in a good place, and you clearly state that you want your data science function to leverage DS to create production quality products.  Production quality can be defined as requiring reproducibility and scalability; rather than insights which can be one-off. 
 
 <h2>What’s needed for a strong foundation?</h2>
+
 - Core DS Workflow Capabilities
 
 - Build out DS skills creating a well rounded DS team
