@@ -130,7 +130,7 @@ Cons:
 
 
 ## Putting it all together
-Successfully standing up a data science function at a later stage startup is a complicated endeavor as every startup is different in addition to its goals for establishing a DS team.  In this case the fucntion's objective is to leverage data science to create production quality products.  A good place to start is establishing:
+Successfully standing up a data science function at a later stage startup is a complicated endeavor as every startup is different in addition to its goals for establishing a DS team.  In this case the function's objective is to leverage data science to create production quality products.  To recap, a good place to start is establishing:
 - process and infrastructure to support a DS workflow 
 - team skillsets including product and software engineering chops 
 - most importantly: establishing where DS fits into the org and an operating model that ensures the ability to map execution to business expecations
