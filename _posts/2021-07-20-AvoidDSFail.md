@@ -14,11 +14,13 @@ OK, a startup just raised a large round focused on becoming more tech-enabled le
 
 **What do you expect DS to do?**
 
-In order to have a clear idea on the goals of establishing a DS function requires carefully evaluating what data-related teams and infrastructure are in place. For example, it is relatively common to assume the need for a DS function, when you would be better served with data management/platforming and BI/analytics; which is requires a dedicated post in itself.
+Establishing goals for a DS function requires careful evaluation of data infrastructure and current data-related teams current workstreams/ownership. For example, it is relatively common to assume the need for a DS function, when you would be better served with data management/platforming and BI/analytics; which requires a dedicated post in itself.
 
-Why? If the data is poorly structured, unstable, then 95% of the work will be messy non-scalable data reconciliation and ad-hoc patches/fixes. 
+Why? When data is poorly structured and unstable, 95% of data work will be messy non-scalable data reconciliation and ad-hoc patches/fixes. This is akin to cleaning up an oil spill without stopping continued spillage at the source let alone establishing a framework to avoid breakage/spillage in the future. 
 
-A data science team can be instrumental in helping transition to a state of data stability and moving towards being a data-driven organization. However, clarity on the state of data is crucial before building out a function to ensure expectations and resources can be aligned to ensure this initiative is set up for success. Now let's say that your data org is in a good place, and your objective for data science is to leverage data science to create production quality products.  Rather than insights and one-off analyses, Production quality requires reproducibility and scalability, requiring a much different foundation to ensure success.
+A data science team can be instrumental in helping transition to a state of data stability and moving towards being a data-driven organization. However, clarity on the state of data is crucial before building out a function to ensure expectations and resources can be aligned ensuring this initiative is set up for success. 
+
+Let's say that your data org is in a good place, and your objective for data science is to leverage data science to create production quality products with direct business impact.  Rather than insights and one-off analyses, production quality tenets are reproducibility and scalability, requiring a much different foundation to ensure success.
 
 <h2>What’s needed for a strong foundation?</h2>
 
@@ -34,7 +36,7 @@ A data science team can be instrumental in helping transition to a state of data
 ![png](../images/building_ds/DSWorkflow.png)
 
 *Process:*  
-Documentation and workflow standards across business narrative (problem statements) down to the technical nitty-gritty; simplicity and a centralized doc framework are crucial for startup data science. For example, N miscellaneous powerpoints should not serve as documentation, and DS teams keep powerpoints to a minimum.
+Documentation and workflow standards across business narrative (problem statements) down to the technical nitty-gritty; simplicity and a centralized doc framework are crucial for startup data science. For example, N miscellaneous powerpoints should not serve as documentation, and DS teams should keep powerpoints to a minimum as general practice.
 
 *Architecture:*    
 ML stack supporting three essential functions (many ML tools/platforms provide more than 1 of these functions).
@@ -49,7 +51,7 @@ ML stack supporting three essential functions (many ML tools/platforms provide m
 
 **Core DS Skill Sets**
 
-Startups without a properly established DS function often consist of a hacker skill set lacking both software engineering fundamentals and product chops leading to a continued accumulation of tech and data debt. Product chops and software engineering fundamentals are core requirements for building high-quality, impactful products, which need to be including in a resource/hiring plan.
+Startups without a properly established DS function often consist of a hacker skill set lacking both software engineering fundamentals and product chops leading to a continued accumulation of tech and data debt. Product chops and software engineering fundamentals are core requirements for building high-quality, impactful products, which need to be including in a resource/hiring plan requiring upfront investment.
 
 <img src="../images/building_ds/DSSkillsets.png" style="width: 500px;" >
 
@@ -57,7 +59,7 @@ Startups without a properly established DS function often consist of a hacker sk
 
 **Where does data science fit in the current org?**
 
-The above are table stakes; the number 1 reason cause of failure is ambiguous ownership and misaligned incentives across the organization.  Choosing an operating model for DS can help facilitate this crucial conversation with executive leadership. 
+The above are table stakes; arguably the number 1 cause of failure is ambiguous ownership and misaligned incentives across the organization.  Choosing an operating model for DS can help facilitate these crucial conversations with executive leadership. 
 
 <img src="../images/building_ds/ds_team_puzzle.png" style="width: 700px;" >
 
@@ -71,7 +73,7 @@ A basketball metaphor probably illustrates this best.
 
 **What happens if you do not choose?**
 
-Not choosing a model often results in one of the following 1 of two failed outcomes (extend the basketball metaphor):
+Not choosing a model often results in one of the following outcomes (extending the basketball metaphor):
 
 ![png](../images/building_ds/flow_chart.png)
 
@@ -85,7 +87,7 @@ Incentives to allocate resources:
 - to the most influential business or exec at the time
 - as quickly as possible whenever possible
 
-This is not DS and run counter to any foundational work.  
+This is not DS and run counter to any foundational work  
 
 <br><br><br><br><br><br><br><br><br>
 <img align="right" src="../images/building_ds/brokenBball.png" style="width: 300px;" >
