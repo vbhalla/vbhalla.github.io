@@ -9,6 +9,9 @@ Standing up a data science function at later stage startups often fails: here's 
 
 OK, a startup just raised a large round focused on becoming more tech-enabled leveraging ML/AI with data science being core to future scalable growth. We have heard these stories many times, and almost every data scientist has seen these initiatives end in failure. The below is a framework to help get started on the right foot.
 
+<img align="center" src="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/data-scientist-meme-3.jpg" style="width: 300px;" >
+
+
 **What do you expect DS to do?**
 
 In order to have a clear idea on the goals of establishing a DS function requires carefully evaluating what data-related teams and infrastructure are in place. For example, it is relatively common to assume the need for a DS function, when you would be better served with data management/platforming and BI/analytics; which is requires a dedicated post in itself.
