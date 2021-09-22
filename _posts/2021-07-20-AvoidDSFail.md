@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Standing up a data science 
+title: Standing up a data science function at later stage startups often fails: here's a framework for success
 date: '2021-08-15 12:07:25 +0000'
 categories:
   - data
