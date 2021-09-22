@@ -1,19 +1,17 @@
 ---
 published: false
 ---
-## Standing up a data science function at later stage startups often fails - a framework for success
+## Standing up a data science function at later stage startups often fails: here's a framework for success
 
-OK, a startup just raised a large round focused on becoming more tech enabled leveraging ML/AI with data science being core to future scalable growth.  We’ve heard these stories so many times, and almost every data scientist has seen these initiatives end in failure.  The below is a framework to help get started on the right foot.
+OK, a startup just raised a large round focused on becoming more tech-enabled leveraging ML/AI with data science being core to future scalable growth. We have heard these stories many times, and almost every data scientist has seen these initiatives end in failure. The below is a framework to help get started on the right foot.
 
 **What do you expect DS to do?**
 
-First step is to evaluate what you currently have in place and what you expect data science to do?  As it’s fairly common to assume you need data science, but actually you need data management/platforming and BI/analytics.
+In order to have a clear idea on the goals of establishing a DS function requires carefully evaluating what data-related teams and infrastructure are in place. For example, it is relatively common to assume the need for a DS function, when you would be better served with data management/platforming and BI/analytics; which is requires a dedicated post in itself.
 
-Why?  If the data is poorly structured, unstable, then 95% of the work will be messy non-scalable data reconciliation and ad-hoc patches/fixes. 
+Why? If the data is poorly structured, unstable, then 95% of the work will be messy non-scalable data reconciliation and ad-hoc patches/fixes. 
 
-A data science team can be instrumental in helping transition to a state of data stability and moving towards being a data driven organization, but clarity on the state of data is crucial PRIOR to building out a function to ensure expectations and resources can be aligned to ensure this initiative is set up for success.  
-
-Building functions to support data management and analytics is a post in itself.  Now let’s say that your data org is in a good place, and you clearly state that you want your data science function to leverage DS to create production quality products.  Production quality can be defined as requiring reproducibility and scalability; rather than insights which can be one-off. 
+A data science team can be instrumental in helping transition to a state of data stability and moving towards being a data-driven organization. However, clarity on the state of data is crucial before building out a function to ensure expectations and resources can be aligned to ensure this initiative is set up for success. Now let's say that your data org is in a good place, and your objective for data science is to leverage data science to create production quality products.  Rather than insights and one-off analyses, Production quality requires reproducibility and scalability, requiring a much different foundation to ensure success.
 
 <h2>What’s needed for a strong foundation?</h2>
 
@@ -24,17 +22,15 @@ Building functions to support data management and analytics is a post in itself.
 - Establish the DS team - org model and ownership
 
 ---
-**Core DS Workflow**
-
-You need to build a core DS workflow
+**Build Core DS Workflow**
 
 ![png](../images/building_ds/DSWorkflow.png)
 
 *Process:*  
-Documentation and workflow standards across business narrative (problem statements) down to the technical nitty gritty; at startups simplicity and a doc framework that is centralized is important.  For example, N miscellaneous powerpoints shouldn’t serve as documentation and DS teams keep powerpoint to a minimum.
+Documentation and workflow standards across business narrative (problem statements) down to the technical nitty-gritty; simplicity and a centralized doc framework are crucial for startup data science. For example, N miscellaneous powerpoints should not serve as documentation, and DS teams keep powerpoints to a minimum.
 
 *Architecture:*    
-You need a ML stack that can support 3 basic functions (many ML tools/platforms provide more than 1 of these functions).  
+ML stack supporting three essential functions (many ML tools/platforms provide more than 1 of these functions).
 
 - Feature Store - how we enrich and transform both internal and external 3rd party data
 
@@ -46,7 +42,7 @@ You need a ML stack that can support 3 basic functions (many ML tools/platforms 
 
 **Core DS Skill Sets**
 
-Majority of teams at startups consist of "hackers" lacking both software engineering fundamentals and product chops.  These are core requirements for building high quality impactiful products and need to be part of a resource/hiring plan.
+Startups without a properly established DS function often consist of a hacker skill set lacking both software engineering fundamentals and product chops leading to a continued accumulation of tech and data debt. Product chops and software engineering fundamentals are core requirements for building high-quality, impactful products, which need to be including in a resource/hiring plan.
 
 <img src="../images/building_ds/DSSkillsets.png" style="width: 500px;" >
 
@@ -54,19 +50,21 @@ Majority of teams at startups consist of "hackers" lacking both software enginee
 
 **Where does data science fit in the current org?**
 
-The above are table stakes, the number 1 reason cause of failure are alignment of incentives and establishing clear ownership.
+The above are table stakes; the number 1 reason cause of failure is ambiguous ownership and misaligned incentives across the organization.  Choosing an operating model for DS can help facilitate this crucial conversation with executive leadership. 
 
 <img src="../images/building_ds/ds_team_puzzle.png" style="width: 700px;" >
 
 **Data Science Operating Models**
 
-It’s extremely important to commit to an operating model to ensure incentives are aligned, this of course can be revisited as the business changes; stakeholder needs and/or resource planning.  
+It is essential to commit to an operating model to ensure that incentives are aligned; as the business changes, this can be revisited if it's also mapped back to resource planning.
 
-A basketball metaphor probably illustrates this best.  
+A basketball metaphor probably illustrates this best.
 
 ![png](../images/building_ds/basketball.png)
 
-Standing up a DS function at later stage startups often fail primarily because of ownership and incentives; choosing a model can help facilitate this crucial conversation with executive leadership.  What happens if you don't choose?
+**What happens if you do not choose?**
+
+Not choosing a model often results in one of the following 1 of two failed outcomes (extend the basketball metaphor):
 
 ![png](../images/building_ds/flow_chart.png)
 
@@ -80,7 +78,7 @@ Incentives to allocate resources:
 - to the most influential business or exec at the time
 - as quickly as possible whenever possible
 
-This is not DS and run counter to any foundational core work necessary.  
+This is not DS and run counter to any foundational work.  
 
 <br><br><br><br><br><br><br><br><br>
 <img align="right" src="../images/building_ds/brokenBball.png" style="width: 300px;" >
@@ -92,7 +90,7 @@ This is not DS and run counter to any foundational core work necessary.
 <br><br><br><br><br><br><br><br><br>
 ## Which Model To Choose?
 
-**So Why Centralize?**
+**Why Centralize?**
 
 Pros: 
 - Global  - Bring data from all parts of company enabling a broader understanding of customer experience
